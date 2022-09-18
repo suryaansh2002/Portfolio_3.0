@@ -1,0 +1,20 @@
+.contact_main{
+    height: 100vh;
+    background: rgb(0, 2, 49);
+background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+
+/* background: linear-gradient(36deg, rgba(0,5,133,0.7178221630449055) 0%, rgba(231,248,254,0.9054972330729166) 44%); */
+/* background: rgb(0,2,63); */
+/* background: linear-gradient(36deg, rgba(19, 23, 126, 0.718) 0%, rgba(19, 23, 126, 0.5) 10%, rgb(226, 233, 235) 60%); */
+
+}
+
+.contact_header{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    color: white;
+    font-family: "Cinzel", serif;
+    padding-top: 4rem;
+}

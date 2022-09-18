@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.landing_main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Uchen', sans-serif;
+    /* margin-top: 5rem; */
+    background: rgb(0,0,0);
+background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+}
+body{
+    overflow-x: hidden;
+}
+div .a, .b,.c,.d, .e,.f,.g,.h,.i,.j,.k {
+    position:fixed;
+    color: white;
+    font-size: 25px;
+    font-family: 'Uchen', sans-serif;
+    opacity: 0.3;
+        
+    }
+ .landing_name{
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: 35vh;
+    left:15%;
+    font-weight: 900;
+    text-align: center;
+    line-height: 110px;
+    font-family: Silkscreen;
+    font-family: 'Rubik Maze', cursive;
+    font-family: 'Cinzel', serif;
+
+ }
+
+ .landing_profile{
+    position: absolute;
+    right: 7.5%;
+    top: 14%;
+    width: 38rem;
+    opacity: 0.6;
+}
