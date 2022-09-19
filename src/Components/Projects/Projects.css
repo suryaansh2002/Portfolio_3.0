@@ -18,3 +18,18 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
     font-family: "Cinzel", serif;
     padding-top: 4rem;
 }
+
+.card_c{
+    text-align: center;
+    align-items: center;
+    padding: auto;
+}
+
+.proj_card{
+    width: 20rem;
+    height: 25rem;
+    background-color: rgb(158, 232, 255);
+    border-radius: 10px;
+    display: inline-block;
+    margin:0rem 4.5rem;
+}
