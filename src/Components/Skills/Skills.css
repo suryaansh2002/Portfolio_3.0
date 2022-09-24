@@ -1,6 +1,6 @@
 .skills_main {
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
 }
 .skills_header {
