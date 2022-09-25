@@ -58,6 +58,7 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
     margin:0rem 4.5rem;
     box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
     padding-top: 2rem;
+    vertical-align:baseline;
     position: relative;
     z-index: 100;
 
@@ -107,6 +108,7 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
 .mainc{
     display: inline-block;
     height: 32.5rem;
+    vertical-align: top;
 }
 .morep{
     color: white;

@@ -74,7 +74,7 @@ export default function ProjectsPage() {
           <img src={atlantis} className="proj_img"></img>
           <div className="proj_title">Atlantis</div>
           <div className="proj_text">
-           A website for an annual online cryptic hunt competition conducted by IEEE SBM, with over 500 participants.
+          A website built using React JS, for IEEE SBM's annual TechWeek 2022.
           </div>
           <div className="icons_c2">
             {/* <AiFillGithub className="picon" />{" "} */}
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
       {/*Ecommerce */}
       <div className="mainc">
         <div className="proj_card">
-          <img src={atlantis} className="proj_img"></img>
+          <img src={''} className="proj_img"></img>
           <div className="proj_title">Ecommerce website</div>
           <div className="proj_text">
           A basic Ecommerce website built using MongoDB, Express, React JS, and Node JS. Styled using bootstrap.
