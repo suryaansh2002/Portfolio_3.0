@@ -12,6 +12,7 @@ import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
 import SkillsPage from './Components/SkillsPage/SkillsPage';
 import Landing from './Components/Landing/Landing';
+import ProjectsPage from './Components/ProjectsPage/ProjectsPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -22,6 +23,8 @@ root.render(
     <Routes>
       <Route path="/" element={<Main/>}/>
       <Route path='skills' element={<SkillsPage/>}/>
+      <Route path='projects' element={<ProjectsPage/>}/>
+
         {/* <Route path="teams" element={<Teams />}>
           <Route path=":teamId" element={<Team />} />
           <Route path="new" element={<NewTeamForm />} />
