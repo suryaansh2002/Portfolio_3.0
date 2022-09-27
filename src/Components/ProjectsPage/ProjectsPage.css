@@ -51,6 +51,11 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
     width: 95%;
     margin-left: 2.5%;
 }
+
+.proj_text a{
+    color: white;
+    text-decoration: underline;
+}
 .proj_card{
     width: 20rem;
     height: 25rem;

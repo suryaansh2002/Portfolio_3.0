@@ -4,6 +4,10 @@ import psychup from "../../Assets/Skills/psych.png";
 import datagrad from "../../Assets/Skills/datagrad.png";
 import decrypt from "../../Assets/Skills/decrypt.png";
 import atlantis from "../../Assets/Skills/atlantis.png";
+import ecommerce from "../../Assets/Skills/ecommerce.png";
+import chattify from "../../Assets/Skills/chattify.png";
+import discussion from "../../Assets/Skills/discussion.png";
+import todo from "../../Assets/Skills/todo.png";
 
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { HiGlobeAlt } from "react-icons/hi";
@@ -87,7 +91,7 @@ export default function ProjectsPage() {
       {/*Ecommerce */}
       <div className="mainc">
         <div className="proj_card">
-          <img src={''} className="proj_img"></img>
+          <img src={ecommerce} className="proj_img"></img>
           <div className="proj_title">Ecommerce website</div>
           <div className="proj_text">
           A basic Ecommerce website built using MongoDB, Express, React JS, and Node JS. Styled using bootstrap.
@@ -100,6 +104,54 @@ export default function ProjectsPage() {
         <div className="inner_card"></div>
       </div>
 
+      {/*Chattify */}
+      <div className="mainc">
+        <div className="proj_card">
+          <img src={chattify} className="proj_img"></img>
+          <div className="proj_title">Chattify</div>
+          <div className="proj_text">
+          A real time chat Application built using React JS, Firebase for Authentication and <a href='https://chatengine.io/'>Chat Engine</a>
+          </div>
+          <div className="icons_c2">
+            <a href='https://github.com/suryaansh2002/Chat-app'><AiFillGithub className="picon" /></a>
+            <a href='https://chat.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
+          </div>
+        </div>
+        <div className="inner_card"></div>
+      </div>
+
+      {/*Discussion Rooms */}
+      <div className="mainc">
+        <div className="proj_card">
+          <img src={discussion} className="proj_img"></img>
+          <div className="proj_title">Discussion Rooms</div>
+          <div className="proj_text">
+          A discussion rooms application, built with HTML-CSS Frontend and Python (Django) Backend.
+          </div>
+          <div className="icons_c2">
+            <a href='https://github.com/suryaansh2002/Discussion_Rooms_Django_App'><AiFillGithub className="picon" /></a>
+            <a href='https://suryaansh-django-app.herokuapp.com/'><HiGlobeAlt className="picon" />{" "}</a>
+          </div>
+        </div>
+        <div className="inner_card"></div>
+      </div>
+
+
+      {/*To Do*/}
+      <div className="mainc">
+        <div className="proj_card">
+          <img src={todo} className="proj_img"></img>
+          <div className="proj_title">To Do App</div>
+          <div className="proj_text">
+          A responsive Todo Web Application built using MERN Stack and Authentication using JWT.
+          </div>
+          <div className="icons_c2">
+            <a href='https://github.com/suryaansh2002/To_Do_App'><AiFillGithub className="picon" /></a>
+            <a href='https://todo.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
+          </div>
+        </div>
+        <div className="inner_card"></div>
+      </div>
     </div>
 
     {/*
