@@ -21,7 +21,7 @@ export default function Landing() {
             <div className="landing_name">
               <Typewriter
                 options={{
-                  strings: [`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/> SURYAANSH`],
+                  strings: [`&nbsp;Hello, <span style=""> I AM</span> &nbsp;<br/> SURYAANSH`],
                   autoStart: true,
                   loop: true,
                 }}

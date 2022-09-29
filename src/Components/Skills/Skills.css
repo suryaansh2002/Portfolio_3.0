@@ -30,9 +30,7 @@
   background: transparent;
 
 }
-.skills_card:hover {
-  cursor: pointer;
-}
+
 .skills_card_img {
   height: 13rem;
   width: 13rem;

@@ -30,7 +30,7 @@ div .a, .b,.c,.d, .e,.f,.g,.h,.i,.j,.k {
     font-size: 90px;
     position: absolute;
     top: 35vh;
-    left:15%;
+    left:10%;
     font-weight: 900;
     text-align: center;
     line-height: 110px;
@@ -45,5 +45,6 @@ div .a, .b,.c,.d, .e,.f,.g,.h,.i,.j,.k {
     right: 7.5%;
     top: 14%;
     width: 38rem;
-    opacity: 0.6;
+    opacity: 0.8;
+    z-index: 100;
 }
