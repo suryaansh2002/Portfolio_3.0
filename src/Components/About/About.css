@@ -18,3 +18,11 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
     font-family: "Cinzel", serif;
     padding-top: 4rem;
 }
+
+.me{
+    width: 23rem;
+    padding-left: 2rem;
+    height: 23rem;
+    position: relative;
+    z-index: 100;
+}

@@ -1,5 +1,5 @@
 .contact_main{
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(0, 2, 49);
 background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
 }
@@ -18,4 +18,27 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
     position: absolute;
     width: 32%;
     left: -5rem;
+    transform: translateY(-60vh);
+}
+
+.logo{
+    color: white;
+    font-size: 9rem;
+}
+
+.logo_C{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-left: 20%;
+    margin-bottom: 8rem;
+    margin-top: 11rem;
+}
+
+.c_text{
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-left: 2rem;
 }

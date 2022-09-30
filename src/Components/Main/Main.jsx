@@ -93,7 +93,7 @@ const particlesLoaded = useCallback(async (container) => {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -101,16 +101,16 @@ const particlesLoaded = useCallback(async (container) => {
                         outModes: {
                             default: "bounce",
                         },
-                        random: false,
-                        speed: 3.5,
+                        random: true,
+                        speed: 4,
                         straight: true,
                     },
                     number: {
                         density: {
-                            enable: true,
+                            enable: false,
                             area: 600,
                         },
-                        value: 80,
+                        value: 100,
                     },
                     opacity: {
                         value: 0.25,

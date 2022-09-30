@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import me from '../../Assets/me.jpeg';
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
   <div className='about_header' id='about'>
     Who am I?
   </div>
+  <div className='left'><img src={me} className='me'/></div>
 </div>
 
 </>  )
