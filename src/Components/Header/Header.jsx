@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
-import {GrDocumentDownload} from 'react-icons/gr'
 export default function Header() {
   return (
     <div className="header_box">
