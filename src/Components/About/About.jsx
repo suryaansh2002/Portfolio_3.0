@@ -8,7 +8,15 @@ export default function About() {
     <>
       <div className="about_main">
         <div className="about_header" id="about">
-          Who am I?
+          <span className="letter">W</span>
+          <span className="letter">h</span>
+          <span className="letter">o</span>
+          <span className="letter"> </span>
+          <span className="letter">a</span>
+          <span className="letter">m </span>
+          <span className="letter"> </span>
+          <span className="letter">I </span>
+          <span className="letter">? </span>
         </div>
         <div className="left">
           <img src={me} className="me" />
@@ -21,9 +29,6 @@ export default function About() {
           variety of techstacks, tools and frameworks, on a variety of projects,
           I am always on the lookout to explore more, learn more and develop my
           skill set.
-          <br />
-          Looking forward to working on projects, collaborating, and learning
-          with anyone with similar interests.
           <br /> Do feel free to reach out to me if you feel you've got
           something that would interest me or if I can be of any help to you.<br/>
           <a href={resume} download><button className="download">Resume <GrDocumentDownload className="d_icon"/></button></a>

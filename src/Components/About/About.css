@@ -10,12 +10,12 @@
 
 .about_header {
   font-weight: 600;
-  font-size: 3rem;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   color: white;
   font-family: "Cinzel", serif;
   padding-top: 4rem;
+  height: 6rem;
 }
 .left {
   width: 24rem;
@@ -35,26 +35,27 @@
   border-radius: 5px;
   width: 23rem;
   height: 23rem;
-  background-color: white;
+  background-color: transparent;
+  border: 2px solid white;
   transform: translate(-21.5rem, 1.25rem);
   display: inline-block;
 }
 
 .about_txt{
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     position: absolute;
-    right: 4rem;
+    right: 9rem;
     height: 50vh;
-    margin-top: -60vh;
-    width: 60vw;
-    line-height: 3rem;
+    margin-top: -52vh;
+    width: 50vw;
+    line-height: 2.7rem;
     
 }
 
 .download{
-  margin-top: 2rem;
-  margin-left: 80%;
+  margin-top: 4rem;
+  margin-left: 30%;
   font-size: 1.2rem;
   background-color: white;
   font-family: "Cinzel", serif;
@@ -64,4 +65,15 @@
 
 .d_icon{
   margin-left: 1rem;
+}
+
+.letter{
+  transition: 0.2s;
+  font-size: 2.5rem;
+}
+.letter:hover{
+font-size: 3.25rem;
+}
+
+.letter:hover .about_header{
 }
