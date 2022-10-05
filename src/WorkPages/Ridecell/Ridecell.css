@@ -1,0 +1,17 @@
+.workex_main{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+    height: 100vh;
+  
+    padding-top: 5rem;
+
+  
+}
+
+.r_title{
+    text-align: center;
+    font-family: 'Cinzel';
+    font-size: 3rem;
+    color: white;
+
+}

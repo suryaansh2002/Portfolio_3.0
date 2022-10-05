@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 .landing_main{
     width: 100vw;
     height: 100vh;
@@ -47,4 +49,24 @@ div .a, .b,.c,.d, .e,.f,.g,.h,.i,.j,.k {
     width: 38rem;
     opacity: 0.8;
     z-index: 100;
+}
+@media only screen and (max-width: 600px) {
+    .landing_profile{
+        left:50%;
+        transform: translateX(-50%);
+        top: 50vh;
+        width: 65vw;
+    }
+    .landing_name{
+        font-size: 7.5vw;
+        position: absolute;
+        top: 20vh;
+        left:50%;
+        transform: translateX(-50%);
+        font-weight: 900;
+        text-align: center;
+        line-height: 8vw;
+    
+    }
+
 }

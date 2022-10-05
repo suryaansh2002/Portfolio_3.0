@@ -1,18 +1,97 @@
-.work_main{
-    background: rgb(0,0,0);
-    background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
-    height: 100vh;
+.work_main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  height: 100vh;
 
-    padding-top: 5rem;    
+  padding-top: 1rem;
 }
-.work_header{
-    font-weight: 600;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.work_header {
+  font-weight: 600;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
   font-family: "Cinzel", serif;
-  padding-top: 4rem;
-
+  padding-top: 2rem;
 }
 
+.card_cont {
+  display: inline-block;
+}
+.work_card {
+  width: 24rem;
+  height: 12rem;
+  border-radius: 20px;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 100;
+  position: relative;
+}
+
+.work_card_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+}
+
+#ridecell {
+  height: 20rem;
+  transform: translateY(-20%);
+}
+
+#apt {
+  transform: translateY(-10%);
+  height: 15rem;
+}
+
+#santanet {
+  transform: translateY(10%);
+  height: 10rem;
+}
+
+.card_bg1 {
+  width: 26.5rem;
+  height: 14.75rem;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255);
+  position: absolute;
+  transform: translate(0.2rem, -14rem);
+  z-index: 0;
+}
+.calender {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.dur {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-family: "Cinzel", serif;
+}
+
+.r_more_w {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-family: 'Roboto';
+  color: black;
+  background-color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0;
+}
+
+.right_w {
+  font-size: 1.5rem;
+  transform: translateY(30%);
+  margin-left: 0.5rem;
+}

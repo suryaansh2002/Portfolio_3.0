@@ -5,7 +5,7 @@
     left: 0;
     background: rgb(0,0,0);
     background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
-    
+    height: 4rem;
 }
 .header_links{
     margin: 0.5rem;
@@ -14,6 +14,7 @@
     margin-right: 2rem;
     margin-top: 2.5rem;
     transform: translateY(-50%);
+    font-family: 'Roboto';
 }
 .header_link{
 
@@ -41,12 +42,16 @@
     margin-left: 1rem;
 }
 
-.resume{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: 0;
-    padding: 0.5rem 1.2rem;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255);
+@media only screen and (max-width: 600px) {
+.header_links{
+ display: none;  
+  }
+
+  .header_logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+  }
+
 }
+  

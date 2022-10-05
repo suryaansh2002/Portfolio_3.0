@@ -87,6 +87,9 @@
   font-weight: 600;
   color: white;
   font-family: "Cinzel", serif;
+  font-family: 'Roboto';
+  text-transform: capitalize;
+
 }
 
 .skills_link:hover {

@@ -75,14 +75,14 @@ const particlesLoaded = useCallback(async (container) => {
                             enable: true,
                             mode: "repulse",
                         },
-                        resize: true,
+                        resize: false,
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
@@ -93,13 +93,13 @@ const particlesLoaded = useCallback(async (container) => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 150,
+                        distance: 100,
                         enable: true,
                         opacity: 0.25,
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -107,28 +107,28 @@ const particlesLoaded = useCallback(async (container) => {
                         outModes: {
                             default: "bounce",
                         },
-                        random: false,
-                        speed: 4.5,
-                        straight: false,
+                        random: true,
+                        speed: 4,
+                        straight: true,
                     },
                     number: {
                         density: {
-                            enable: true,
-                            area: 800,
+                            enable: false,
+                            area: 600,
                         },
-                        value: 80,
+                        value: 100,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.25,
                     },
                     shape: {
-                        type: "circle",
+                        type: "square",
                     },
                     size: {
                         value: { min: 1, max: 5 },
                     },
                 },
-                detectRetina: true,
+                detectRetina: false,
             }}
         />
 

@@ -118,10 +118,11 @@ background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
 .morep{
     color: white;
     text-align: right;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-family: "Cinzel", serif;
     margin-right: 5rem;
     margin-bottom: 2rem;
+    font-family: 'Roboto';
 
 }
 

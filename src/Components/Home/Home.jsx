@@ -3,6 +3,7 @@ import './Home.css';
 import $ from 'jquery'; 
 import profile from '../../Assets/profile.png';
 
+
 export default function Home() {
   const [anim,setAnim]=useState(false);
   $(document).ready(function() {

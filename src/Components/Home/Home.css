@@ -36,3 +36,10 @@
     top:52vh;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .home_img{
+    display: none;
+    }
+}

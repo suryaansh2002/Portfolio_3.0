@@ -14,6 +14,9 @@ import Main from './Components/Main/Main';
 import SkillsPage from './Components/SkillsPage/SkillsPage';
 import Landing from './Components/Landing/Landing';
 import ProjectsPage from './Components/ProjectsPage/ProjectsPage';
+import Ridecell from './WorkPages/Ridecell/Ridecell';
+import Apt from './WorkPages/APT/Apt';
+import Santanet from './WorkPages/Santanet/Santanet';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -25,6 +28,10 @@ root.render(
       <Route path="/" element={<Main/>}/>
       <Route path='skills' element={<SkillsPage/>}/>
       <Route path='projects' element={<ProjectsPage/>}/>
+      <Route path='ridecell' element={<Ridecell/>}/>
+      <Route path='apt' element={<Apt/>}/>
+      <Route path='santanet' element={<Santanet/>}/>
+
 
         {/* <Route path="teams" element={<Teams />}>
           <Route path=":teamId" element={<Team />} />
