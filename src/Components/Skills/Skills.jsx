@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import "./Skills.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -45,7 +45,9 @@ import node from "../../Assets/Skills/node.png";
 import SkillsCard from "./SkillsCard";
 
 export default function Skills() {
-  const settings = {
+  const [carSettings, setCarSettings] = useState();
+
+  var settings = {
     infinite: true,
     dots: true,
     slidesToShow: 4,
@@ -57,12 +59,44 @@ export default function Skills() {
     pauseOnHover: true,
     swipeToSlide: true,
   };
+  var settings2 = {
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    centerMode: true,
+    pauseOnHover: true,
+    swipeToSlide: true,
+  };
+  var settings3 = {
+    infinite: true,
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    centerMode: true,
+    pauseOnHover: true,
+    swipeToSlide: true,
+  };
+  useEffect(() => {
+    window.innerWidth > 1000
+      ? setCarSettings(settings)
+      : window.innerWidth > 800
+      ? setCarSettings(settings3)
+      : setCarSettings(settings2);
+  }, [window.innerWidth]);
+
 
   return (
     <div className="skills_main">
       <div className="skills_header" id="skills">My Skills</div>
       <div className="imgslider">
-        <Slider {...settings}>
+        <Slider {...carSettings}>
           <SkillsCard img={c} name="C" stars={4} half={true} />
           <SkillsCard img={cpp} name="C++" stars={4} half={false} />
           <SkillsCard img={python} name="Python" stars={4} half={true} />

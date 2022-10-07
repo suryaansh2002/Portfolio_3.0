@@ -28,7 +28,6 @@
   margin: 0rem 4rem;
   display: inline-block;
   background: transparent;
-
 }
 
 .skills_card_img {
@@ -87,21 +86,52 @@
   font-weight: 600;
   color: white;
   font-family: "Cinzel", serif;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   text-transform: capitalize;
-
 }
 
 .skills_link:hover {
   cursor: pointer;
 }
-.arrow{
+.arrow {
   margin-left: 10px;
-  padding-top:4px;
+  padding-top: 4px;
   position: absolute;
   transition: 0.8s;
 }
 
-.skills_link:hover .arrow{
-transform: translateX(10px);
+.skills_link:hover .arrow {
+  transform: translateX(10px);
+}
+
+@media only screen and (max-width: 600px) {
+  .imgslider {
+    margin-left: -1rem;
+  }
+.skills_header {
+font-size: 8vw;
+padding-top: 6rem;
+}
+.skills_link {
+  font-size: 5vw;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-family: "Roboto";
+  text-transform: capitalize;
+}
+.arrow {
+  margin-left: 10px;
+  padding-top: 8px;
+  position: absolute;
+  transition: 0.8s;
+  font-size: 5vw;
+}
+
+.skills_link:hover .arrow {
+  transform: none;
+}
+
+
 }

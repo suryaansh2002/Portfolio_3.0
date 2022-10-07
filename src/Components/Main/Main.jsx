@@ -26,6 +26,98 @@ const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
 }, []);
 
+var particlesObj;
+var width = window.innerWidth;
+if (width>768){
+
+    particlesObj= {
+        color: {
+            value: "#ffffff",
+        },
+        links: {
+            color: "#ffffff",
+            distance: 100,
+            enable: true,
+            opacity: 0.25,
+            width: 1,
+        },
+        collisions: {
+            enable: false,
+        },
+        move: {
+            directions: "none",
+            enable: true,
+            outModes: {
+                default: "bounce",
+            },
+            random: true,
+            speed: 4,
+            straight: true,
+        },
+        number: {
+            density: {
+                enable: false,
+                area: 600,
+            },
+            value: 100,
+        },
+        opacity: {
+            value: 0.25,
+        },
+        shape: {
+            type: "circle",
+        },
+        size: {
+            value: 3,
+        },
+    }
+}else{
+     particlesObj={
+    
+        color: {
+            value: "#ffffff",
+        },
+        nb: Math.round(Math.sqrt(width)),
+        links: {
+            color: "#ffffff",
+            distance: 50,
+            enable: true,
+            opacity: 0.25,
+            width: 0.6,
+        },
+        collisions: {
+            enable: false,
+        },
+        move: {
+            directions: "none",
+            enable: true,
+            outModes: {
+                default: "bounce",
+            },
+            random: true,
+            speed: 4,
+            straight: true,
+        },
+        number: {
+            density: {
+                enable: false,
+                area: 0,
+            },
+            value: 50,
+        },
+        opacity: {
+            value: 0.25,
+        },
+        shape: {
+            type: "circle",
+        },
+        size: {
+            value: 2,
+        }
+    }
+    
+}
+
   return (
     <>
         <AnimatedCursor
@@ -55,6 +147,7 @@ const particlesLoaded = useCallback(async (container) => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                density_auto: true,
                 background: {
                     
                 },
@@ -81,47 +174,7 @@ const particlesLoaded = useCallback(async (container) => {
                         },
                     },
                 },
-                particles: {
-                    color: {
-                        value: "#ffffff",
-                    },
-                    links: {
-                        color: "#ffffff",
-                        distance: 100,
-                        enable: true,
-                        opacity: 0.25,
-                        width: 1,
-                    },
-                    collisions: {
-                        enable: false,
-                    },
-                    move: {
-                        directions: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce",
-                        },
-                        random: true,
-                        speed: 4,
-                        straight: true,
-                    },
-                    number: {
-                        density: {
-                            enable: false,
-                            area: 600,
-                        },
-                        value: 100,
-                    },
-                    opacity: {
-                        value: 0.25,
-                    },
-                    shape: {
-                        type: "square",
-                    },
-                    size: {
-                        value: { min: 1, max: 5 },
-                    },
-                },
+                particles: particlesObj,
                 detectRetina: false,
             }}
         />
@@ -130,7 +183,7 @@ const particlesLoaded = useCallback(async (container) => {
         <About/>
         <Skills/>
         <Projects/>
-        <Work/>
+        {/* <Work/> */}
         <Contact/>
     </>
 

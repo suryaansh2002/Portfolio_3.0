@@ -79,7 +79,7 @@
   font-size: 1.2rem;
   margin-top: 2rem;
   text-decoration: underline;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   color: black;
   background-color: white;
   width: fit-content;
@@ -94,4 +94,73 @@
   font-size: 1.5rem;
   transform: translateY(30%);
   margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .work_header {
+    font-size: 6vw;
+  }
+  .card_cont {
+    display: block;
+    width: 90vw;
+    margin-bottom: 2rem;
+  }
+  .work_card_container {
+    display: block;
+    margin-top: 0rem;
+  }
+  .work_card {
+    width: 60vw;
+    height: 30vw;
+    margin-left: 15vw;
+  }
+  .dur {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .card_bg1 {
+    width: 68vw;
+    height: 40vw;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255);
+    position: absolute;
+    transform: translate(15vw, -37vw);
+    z-index: 0;
+  }
+
+  #ridecell {
+    height: 50vw;
+    transform: translateY(-20%);
+  }
+
+  #apt {
+    transform: translateY(-10%);
+    height: 35vw;
+  }
+
+  #santanet {
+    transform: translateY(10%);
+    height: 25vw;
+  }
+
+  .r_more_w {
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    font-family: "Roboto";
+    color: black;
+    background-color: white;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0.2rem;
+  }
+ .right_w {
+  font-size: 1.2rem;
+  transform: translateY(30%);
+  margin-left: 0.5rem;
+} 
 }

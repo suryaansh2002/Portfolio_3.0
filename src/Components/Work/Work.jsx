@@ -13,7 +13,7 @@ export default function Work() {
         Work Experience
       </div>
       <div className="work_card_container">
-        <div className="card_c">
+        <div className="card_cont">
           <div className="work_card">
             <img src={ridecell} id="ridecell"className="work_card_img" />
           </div>
@@ -21,7 +21,7 @@ export default function Work() {
           <div className="dur"><AiFillCalendar className="calender"/>May '22 - Aug '22</div>
           <a href="/ridecell"><div className="r_more_w">Read More <IoIosArrowDropright className="right_w"/></div></a>
         </div>
-        <div className="card_c">
+        <div className="card_cont">
           <div className="work_card">
             <img src={apt}  id="apt" className="work_card_img" />
           </div>
@@ -31,7 +31,7 @@ export default function Work() {
           <a href="/apt"><div className="r_more_w">Read More <IoIosArrowDropright className="right_w"/></div></a>
 
         </div>
-        <div className="card_c">
+        <div className="card_cont">
           <div className="work_card">
             <img src={santanet} id="santanet" className="work_card_img" />
           </div>

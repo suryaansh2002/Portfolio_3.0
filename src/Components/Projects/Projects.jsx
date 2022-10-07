@@ -23,9 +23,9 @@ export default function Projects() {
             It is a project aims to increase knowledge and awareness regarding mental health in India.
           </div>
           <div className="icons_c">
-            <a href='https://github.com/suryaansh2002/psychup'><AiFillGithub className="picon" /></a>
-            <a href='https://www.psychup.org.in/'><HiGlobeAlt className="picon" /></a>
-            <a href='https://instagram.com/psychup_org'><AiFillInstagram className="picon" /></a>
+            <a target="__blank" href='https://github.com/suryaansh2002/psychup'><AiFillGithub className="picon" /></a>
+            <a target="__blank"  href='https://www.psychup.org.in/'><HiGlobeAlt className="picon" /></a>
+            <a  target="__blank" href='https://instagram.com/psychup_org'><AiFillInstagram className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -42,8 +42,8 @@ export default function Projects() {
             and students eager to learn new skills.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/datagrad'><AiFillGithub className="picon" /></a>
-            <a href='https://datagrad.netlify.app/'><HiGlobeAlt className="picon" /></a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/datagrad'><AiFillGithub className="picon" /></a>
+            <a  target="__blank" href='https://datagrad.netlify.app/'><HiGlobeAlt className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -59,25 +59,13 @@ export default function Projects() {
            A website for an annual online cryptic hunt competition conducted by IEEE SBM, with over 500 participants.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/d3crypt_backend'><AiFillGithub className="picon" /></a>
-            <a href='https://d3crypt.ieeemanipal.com/'><HiGlobeAlt className="picon" /></a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/d3crypt_backend'><AiFillGithub className="picon" /></a>
+            <a target="__blank"  href='https://d3crypt.ieeemanipal.com/'><HiGlobeAlt className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
       </div>
       </div>
-      {/*
-       DataGrad
-       Psychup
-       Decrypt
-       Atlantis
-       Ecommerce
-       Chatify
-       Discussion room django
-       To do
-       Quiz app TS
-       Certman
-        */}
     </div>
   );
 }

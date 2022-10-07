@@ -20,8 +20,8 @@ export default function About() {
         </div>
         <div className="left">
           <img src={me} className="me" />
+          <div className="leftBg"></div>
         </div>
-        <div className="leftBg"></div>
         <div className="about_txt">
           I am Suryaansh Rathinam, a Computer Science Undergrad at Manipal
           Institue of Technology.

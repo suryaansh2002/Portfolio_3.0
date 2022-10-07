@@ -147,9 +147,9 @@ const particlesLoaded = useCallback(async (container) => {
             It is a project aims to increase knowledge and awareness regarding mental health in India.
           </div>
           <div className="icons_c">
-            <a href='https://github.com/suryaansh2002/psychup'><AiFillGithub className="picon" /></a>
-            <a href='https://www.psychup.org.in/'><HiGlobeAlt className="picon" /></a>
-            <a href='https://instagram.com/psychup_org'><AiFillInstagram className="picon" /></a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/psychup'><AiFillGithub className="picon" /></a>
+            <a  target="__blank" href='https://www.psychup.org.in/'><HiGlobeAlt className="picon" /></a>
+            <a  target="__blank" href='https://instagram.com/psychup_org'><AiFillInstagram className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -166,8 +166,8 @@ const particlesLoaded = useCallback(async (container) => {
             and students eager to learn new skills.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/datagrad'><AiFillGithub className="picon" /></a>
-            <a href='https://datagrad.netlify.app/'><HiGlobeAlt className="picon" /></a>
+            <a  target="__blank" href='https://github.com/suryaansh2002/datagrad'><AiFillGithub className="picon" /></a>
+            <a  target="__blank" href='https://datagrad.netlify.app/'><HiGlobeAlt className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -183,8 +183,8 @@ const particlesLoaded = useCallback(async (container) => {
            A website for an annual online cryptic hunt competition conducted by IEEE SBM, with over 500 participants.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/d3crypt_backend'><AiFillGithub className="picon" /></a>
-            <a href='https://d3crypt.ieeemanipal.com/'><HiGlobeAlt className="picon" /></a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/d3crypt_backend'><AiFillGithub className="picon" /></a>
+            <a target="__blank"  href='https://d3crypt.ieeemanipal.com/'><HiGlobeAlt className="picon" /></a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -200,7 +200,7 @@ const particlesLoaded = useCallback(async (container) => {
           </div>
           <div className="icons_c2">
             {/* <AiFillGithub className="picon" />{" "} */}
-            <a href='https://atlantis.ieeemanipal.com/'><HiGlobeAlt className="picon" />{" "}</a>
+            <a target="__blank"  href='https://atlantis.ieeemanipal.com/'><HiGlobeAlt className="picon" />{" "}</a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -215,8 +215,8 @@ const particlesLoaded = useCallback(async (container) => {
           A basic Ecommerce website built using MongoDB, Express, React JS, and Node JS. Styled using bootstrap.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/Ecommerce_site_practice'><AiFillGithub className="picon" /></a>
-            <a href='https://ecommerce.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/Ecommerce_site_practice'><AiFillGithub className="picon" /></a>
+            <a  target="__blank" href='https://ecommerce.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -231,8 +231,8 @@ const particlesLoaded = useCallback(async (container) => {
           A real time chat Application built using React JS, Firebase for Authentication and <a href='https://chatengine.io/'>Chat Engine</a>
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/Chat-app'><AiFillGithub className="picon" /></a>
-            <a href='https://chat.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
+            <a  target="__blank" href='https://github.com/suryaansh2002/Chat-app'><AiFillGithub className="picon" /></a>
+            <a target="__blank"  href='https://chat.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -247,8 +247,8 @@ const particlesLoaded = useCallback(async (container) => {
           A discussion rooms application, built with HTML-CSS Frontend and Python (Django) Backend.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/Discussion_Rooms_Django_App'><AiFillGithub className="picon" /></a>
-            <a href='https://suryaansh-django-app.herokuapp.com/'><HiGlobeAlt className="picon" />{" "}</a>
+            <a  target="__blank" href='https://github.com/suryaansh2002/Discussion_Rooms_Django_App'><AiFillGithub className="picon" /></a>
+            <a  target="__blank" href='https://suryaansh-django-app.herokuapp.com/'><HiGlobeAlt className="picon" />{" "}</a>
           </div>
         </div>
         <div className="inner_card"></div>
@@ -264,26 +264,14 @@ const particlesLoaded = useCallback(async (container) => {
           A responsive Todo Web Application built using MERN Stack and Authentication using JWT.
           </div>
           <div className="icons_c2">
-            <a href='https://github.com/suryaansh2002/To_Do_App'><AiFillGithub className="picon" /></a>
-            <a href='https://todo.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
+            <a target="__blank"  href='https://github.com/suryaansh2002/To_Do_App'><AiFillGithub className="picon" /></a>
+            <a target="__blank"  href='https://todo.suryaanshrathinam.com/'><HiGlobeAlt className="picon" />{" "}</a>
           </div>
         </div>
         <div className="inner_card"></div>
       </div>
     </div>
 
-    {/*
-     DataGrad
-     Psychup
-     Decrypt
-     Atlantis
-     Ecommerce
-     Chatify
-     Discussion room django
-     To do
-     Quiz app TS
-     Certman
-      */}
   </div>
 </>
   )

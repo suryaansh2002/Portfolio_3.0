@@ -10,7 +10,7 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Uchen', sans-serif;
     /* margin-top: 5rem; */
     background: rgb(0,0,0);
