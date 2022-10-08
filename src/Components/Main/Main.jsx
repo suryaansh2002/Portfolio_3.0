@@ -183,7 +183,7 @@ if (width>768){
         <About/>
         <Skills/>
         <Projects/>
-        {/* <Work/> */}
+        <Work/>
         <Contact/>
     </>
 

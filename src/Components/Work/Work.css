@@ -1,7 +1,7 @@
 .work_main {
   background: rgb(0, 0, 0);
   background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
-  height: 100vh;
+  min-height: 100vh;
 
   padding-top: 1rem;
 }
@@ -72,6 +72,8 @@
   font-size: 1.5rem;
   margin-top: 2rem;
   font-family: "Cinzel", serif;
+  text-align: center;
+  
 }
 
 .r_more_w {
