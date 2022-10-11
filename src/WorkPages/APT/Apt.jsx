@@ -1,7 +1,9 @@
 import React, { useCallback } from "react";
-import "./Apt.css";
+import "../Ridecell/Ridecell.css";
 import { loadFull } from "tsparticles";
-
+import { AiFillCalendar } from "react-icons/ai";
+import apt from "../../Assets/Work/apt2.png";
+import './Apt.css'
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
 
@@ -114,6 +116,64 @@ export default function Apt() {
           }}
         />
         <div className="r_title">Apice Tech</div>
+        <div className="work_dur">
+          <AiFillCalendar className="work_calender" />
+          Apr '22 - Jul '22
+        </div>
+
+        <div className="rc1">
+          <div className="rc1_left">
+            <div className="img_container">
+              <img src={apt} className="ridecell_logo" id="apt_logo"/>
+            </div>
+          </div>
+          <div className="rc1_right">
+            <div className="about_comp">About The Company</div>
+            <div className="about_content">
+              <p>
+                Apice Tech is a start up based in New Delhi, India. They aim to
+                simplify the Software Development Life Cycle (SDLC), with the
+                help of their product KaizIQ, that is an end-to-end SDLC tool
+                that integrates and automates all its phases into a single
+                framework and helps the users monitor and generate real-time
+                progress reports.
+              </p>
+              <p>
+                It provides the users with a variety of features such as Project
+                Management with real time reports and dashboards, custom CI/CD
+                workflows and automation, and testing automation with a
+                comprehensive testing suite.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="rc2">
+          <div className="rc2_left">
+            <div className="mywork">My Work at Apice Tech</div>
+            <p>
+              As one of the first Full Stack Software Engineering Interns at
+              Apice Tech, I got to work closely with the founder's to understand
+              their vision of the product and help bring it to life.
+            </p>
+            <p>
+              I worked on both the frontend and server side of their product,
+              employing the use of ReactJS and Java. I also got the experience
+              of writing unit tests for various microservices used my the
+              product.
+            </p>
+            <p></p>
+          </div>
+          <div className="rc2_right">
+            <div className="skillsH">Tools and Technologies Used</div>
+            <div className="skil_set">
+              <div className="work_skill">ReactJS</div>
+              <div className="work_skill">JavaScript</div>
+              <div className="work_skill">CSS</div>
+              <div className="work_skill">Java</div>
+              <div className="work_skill">Spring Boot</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

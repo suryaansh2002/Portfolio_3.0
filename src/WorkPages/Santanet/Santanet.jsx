@@ -1,9 +1,10 @@
 import React, { useCallback } from "react";
 import "./Santanet.css";
 import { loadFull } from "tsparticles";
-
+import santanet from "../../Assets/Work/santanet.png";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
+import { AiFillCalendar } from "react-icons/ai";
 
 export default function Santanet() {
   const particlesInit = useCallback(async (engine) => {
@@ -114,6 +115,61 @@ export default function Santanet() {
           }}
         />
         <div className="r_title">Santanet</div>
+        <div className="work_dur">
+          <AiFillCalendar className="work_calender" />
+          Apr '22 - Jul '22
+        </div>
+
+        <div className="rc1">
+          <div className="rc1_left">
+            <div id="img_container">
+              <img
+                src={santanet}
+                className="ridecell_logo"
+                id="santanent_logo"
+              />
+            </div>
+          </div>
+          <div className="rc1_right">
+            <div className="about_comp">About The Company</div>
+            <div className="about_content">
+              <p>
+                SantaNet is a social service, non-profit organisation founded in
+                2020 that aims to educate and uplift the less privileged. At
+                SantaNet, the vision is to use technology to dramatically
+                increase transparency in donations and automation in practical
+                education for the less privileged. It also aims to increase
+                volunteers for educating and spreading awareness among children
+                in orphanages, foster homes and special education centres. They
+                focus on holistic development through their well designed
+                application and meticulously curated courses on topics like
+                social awareness, STEM made fun, and sexual education.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="rc2">
+          <div className="rc2_left">
+            <div className="mywork">My Work at SantaNet</div>
+
+            <p>
+              Over the course of my part-time internship at SantaNet as a
+              WebDeveloper, I worked as a part of a team of 4 developers,
+              working primarily on the Frontend of the Website for this NGO,
+              using ReactJS.
+            </p>
+          </div>
+          <div className="rc2_right">
+            <div className="skillsH">Tools and Technologies Used</div>
+            <div className="skil_set">
+              <div className="work_skill">ReactJS</div>
+              <div className="work_skill">JavaScript</div>
+              <div className="work_skill">CSS</div>
+              <div className="work_skill">Bootstrap</div>
+              <div className="work_skill">Material UI</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

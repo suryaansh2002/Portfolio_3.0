@@ -1,7 +1,7 @@
 import "./Work.css";
 import React from "react";
 import ridecell from "../../Assets/Work/ridecell.png";
-import apt from "../../Assets/Work/apt.png";
+import apt from "../../Assets/Work/apt2.png";
 import santanet from "../../Assets/Work/santanet.png";
 import {IoIosArrowDropright} from 'react-icons/io';
 

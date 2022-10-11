@@ -44,8 +44,8 @@
 }
 
 #apt {
-  transform: translateY(-10%);
-  height: 15rem;
+  transform: translateY(0%);
+  height: 12rem;
 }
 
 #santanet {
@@ -136,8 +136,8 @@
   }
 
   #apt {
-    transform: translateY(-10%);
-    height: 35vw;
+    transform: translateY(0%);
+    height: 30vw;
   }
 
   #santanet {
