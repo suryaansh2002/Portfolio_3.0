@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import me from "../../Assets/me.jpeg";
+import me from "../../Assets/me.png";
 import { MdSimCardDownload } from "react-icons/md";
 import resume from "../../Assets/SuryaanshRathinam_Resume.pdf";
 export default function About() {

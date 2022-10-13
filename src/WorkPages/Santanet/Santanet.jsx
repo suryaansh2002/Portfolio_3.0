@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import santanet from "../../Assets/Work/santanet.png";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
-import { AiFillCalendar } from "react-icons/ai";
+import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
 
 export default function Santanet() {
   const particlesInit = useCallback(async (engine) => {
@@ -146,6 +146,12 @@ export default function Santanet() {
                 application and meticulously curated courses on topics like
                 social awareness, STEM made fun, and sexual education.
               </p>
+              <a href="https://ridecell.com/" target={"_blank"}>
+                <button className="website_link">
+                  <AiOutlineLink className="link_icon" />
+                  Website
+                </button>
+              </a>
             </div>
           </div>
         </div>

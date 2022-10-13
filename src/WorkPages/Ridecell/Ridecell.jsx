@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 import ridecell from "../../Assets/Work/ridecell.png";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
-import { AiFillCalendar } from "react-icons/ai";
+import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
 
 export default function Ridecell() {
   const particlesInit = useCallback(async (engine) => {
@@ -146,6 +146,12 @@ export default function Ridecell() {
               dramatically streamlining fleet operations and opening up new
               revenue opportunities.
             </p>
+            <a href="https://ridecell.com/" target={"_blank"}>
+              <button className="website_link">
+                <AiOutlineLink className="link_icon" />
+                Website
+              </button>
+            </a>
           </div>
         </div>
       </div>

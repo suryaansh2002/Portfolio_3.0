@@ -18,7 +18,9 @@
   width: 100vw;
   display: block;
 }
-
+.rc2{
+  margin-top: 2rem;
+}
 .rc1_left {
   display: inline-block;
   width: 50%;
@@ -111,11 +113,10 @@
 .work_dur {
   color: white;
   font-size: 1.2rem;
-  /* margin-top: 2rem; */
   font-family: "Cinzel", serif;
   text-align: center;
   margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .work_calender {
@@ -142,10 +143,26 @@
   font-weight: 500;
   font-size: 1.2rem;
   border-radius: 50px;
-  box-shadow: 5px 2px 5px black;
+  box-shadow:5px 3px 3px  2px rgb(255, 255, 255);
 }
 
 .rc1 {
   height: fit-content;
   height: max-content;
+}
+
+.website_link{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.774);
+  font-family: 'Cinzel';
+  font-size: 1rem;
+}
+
+.link_icon{
+  font-size: 1.25rem;
+  margin-right: .6rem;
+  transform: translateY(0.25rem);
 }
