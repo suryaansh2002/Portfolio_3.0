@@ -128,14 +128,13 @@
     padding-top: 0.1rem;
     border-radius: 50px;
   }
-  
+
   .d_icon {
     margin-left: 0.25rem;
     font-size: 1.3rem;
     transform: translateY(15%);
   }
-.about_main {
-min-height: 100vh;
-}
-  
+  .about_main {
+    min-height: 100vh;
+  }
 }

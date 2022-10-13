@@ -12,59 +12,86 @@ export default function Projects() {
       <div className="projects_header" id="projects">
         My Projects
       </div>
-      <div className="morep"><a href="/projects">More Projects...</a></div>
+      <div className="morep">
+        <a href="/projects">More Projects...</a>
+      </div>
       <div className="card_c">
-          {/*Psychup */}
-          <div className="mainc">
-        <div className="proj_card">
-          <img src={psychup} className="proj_img"></img>
-          <div className="proj_title">Psychup</div>
-          <div className="proj_text">
-            It is a project aims to increase knowledge and awareness regarding mental health in India.
+        {/*Psychup */}
+        <div className="mainc">
+          <div className="proj_card">
+            <img src={psychup} className="proj_img"></img>
+            <div className="proj_title">Psychup</div>
+            <div className="proj_text">
+              It is a project aims to increase knowledge and awareness regarding
+              mental health in India.
+            </div>
+            <div className="icons_c">
+              <a
+                target="__blank"
+                href="https://github.com/suryaansh2002/psychup"
+              >
+                <AiFillGithub className="picon" />
+              </a>
+              <a target="__blank" href="https://www.psychup.org.in/">
+                <HiGlobeAlt className="picon" />
+              </a>
+              <a target="__blank" href="https://instagram.com/psychup_org">
+                <AiFillInstagram className="picon" />
+              </a>
+            </div>
           </div>
-          <div className="icons_c">
-            <a target="__blank" href='https://github.com/suryaansh2002/psychup'><AiFillGithub className="picon" /></a>
-            <a target="__blank"  href='https://www.psychup.org.in/'><HiGlobeAlt className="picon" /></a>
-            <a  target="__blank" href='https://instagram.com/psychup_org'><AiFillInstagram className="picon" /></a>
-          </div>
+          <div className="inner_card"></div>
         </div>
-        <div className="inner_card"></div>
-      </div>
 
-      {/*Datagrad */}
+        {/*Datagrad */}
 
-      <div className="mainc">
-        <div className="proj_card">
-          <img src={datagrad} className="proj_img"></img>
-          <div className="proj_title">DataGrad</div>
-          <div className="proj_text">
-            It aims to bridge the gap between top MOOCs like Coursera,
-            and students eager to learn new skills.
+        <div className="mainc">
+          <div className="proj_card">
+            <img src={datagrad} className="proj_img"></img>
+            <div className="proj_title">DataGrad</div>
+            <div className="proj_text">
+              It aims to bridge the gap between top MOOCs like Coursera, and
+              students eager to learn new skills.
+            </div>
+            <div className="icons_c2">
+              <a
+                target="__blank"
+                href="https://github.com/suryaansh2002/datagrad"
+              >
+                <AiFillGithub className="picon" />
+              </a>
+              <a target="__blank" href="https://datagrad.netlify.app/">
+                <HiGlobeAlt className="picon" />
+              </a>
+            </div>
           </div>
-          <div className="icons_c2">
-            <a target="__blank"  href='https://github.com/suryaansh2002/datagrad'><AiFillGithub className="picon" /></a>
-            <a  target="__blank" href='https://datagrad.netlify.app/'><HiGlobeAlt className="picon" /></a>
-          </div>
+          <div className="inner_card"></div>
         </div>
-        <div className="inner_card"></div>
-      </div>
-     
-      {/*Decrypt */}
-      
-      <div className="mainc">
-        <div className="proj_card">
-          <img src={decrypt} className="proj_img"></img>
-          <div className="proj_title">Decrypt</div>
-          <div className="proj_text">
-           A website for an annual online cryptic hunt competition conducted by IEEE SBM, with over 500 participants.
+
+        {/*Decrypt */}
+
+        <div className="mainc">
+          <div className="proj_card">
+            <img src={decrypt} className="proj_img"></img>
+            <div className="proj_title">Decrypt</div>
+            <div className="proj_text">
+              A website for an annual online cryptic hunt competition conducted
+              by IEEE SBM, with over 500 participants.
+            </div>
+            <div className="icons_c2">
+              <a
+                target="__blank"
+                href="https://github.com/suryaansh2002/d3crypt_backend"
+              >
+                <AiFillGithub className="picon" />
+              </a>
+              <a target="__blank" href="https://d3crypt.ieeemanipal.com/">
+                <HiGlobeAlt className="picon" />
+              </a>
+            </div>
           </div>
-          <div className="icons_c2">
-            <a target="__blank"  href='https://github.com/suryaansh2002/d3crypt_backend'><AiFillGithub className="picon" /></a>
-            <a target="__blank"  href='https://d3crypt.ieeemanipal.com/'><HiGlobeAlt className="picon" /></a>
-          </div>
+          <div className="inner_card"></div>
         </div>
-        <div className="inner_card"></div>
-      </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import "../Ridecell/Ridecell.css";
 import { loadFull } from "tsparticles";
 import { AiFillCalendar } from "react-icons/ai";
 import apt from "../../Assets/Work/apt2.png";
-import './Apt.css'
+import "./Apt.css";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
 
@@ -124,8 +124,9 @@ export default function Apt() {
         <div className="rc1">
           <div className="rc1_left">
             <div className="img_container">
-              <img src={apt} className="ridecell_logo" id="apt_logo"/>
+              <img src={apt} className="ridecell_logo" id="apt_logo" />
             </div>
+            <div className="img_cont_bg"></div>
           </div>
           <div className="rc1_right">
             <div className="about_comp">About The Company</div>

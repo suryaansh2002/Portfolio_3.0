@@ -108,30 +108,28 @@
   .imgslider {
     margin-left: -1rem;
   }
-.skills_header {
-font-size: 8vw;
-padding-top: 6rem;
-}
-.skills_link {
-  font-size: 5vw;
-  text-decoration: none;
-  font-weight: 400;
-  color: white;
-  font-family: "Cinzel", serif;
-  font-family: "Roboto";
-  text-transform: capitalize;
-}
-.arrow {
-  margin-left: 10px;
-  padding-top: 8px;
-  position: absolute;
-  transition: 0.8s;
-  font-size: 5vw;
-}
+  .skills_header {
+    font-size: 8vw;
+    padding-top: 6rem;
+  }
+  .skills_link {
+    font-size: 5vw;
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-family: "Roboto";
+    text-transform: capitalize;
+  }
+  .arrow {
+    margin-left: 10px;
+    padding-top: 8px;
+    position: absolute;
+    transition: 0.8s;
+    font-size: 5vw;
+  }
 
-.skills_link:hover .arrow {
-  transform: none;
-}
-
-
+  .skills_link:hover .arrow {
+    transform: none;
+  }
 }

@@ -122,13 +122,14 @@ export default function Santanet() {
 
         <div className="rc1">
           <div className="rc1_left">
-            <div id="img_container">
+            <div className="img_container">
               <img
                 src={santanet}
                 className="ridecell_logo"
                 id="santanent_logo"
               />
             </div>
+            <div className="img_cont_bg"></div>
           </div>
           <div className="rc1_right">
             <div className="about_comp">About The Company</div>

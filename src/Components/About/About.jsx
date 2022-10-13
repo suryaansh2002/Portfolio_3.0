@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
 import me from "../../Assets/me.jpeg";
-import {MdSimCardDownload} from 'react-icons/md'
-import resume from '../../Assets/SuryaanshRathinam_Resume.pdf'
+import { MdSimCardDownload } from "react-icons/md";
+import resume from "../../Assets/SuryaanshRathinam_Resume.pdf";
 export default function About() {
   return (
     <>
@@ -30,8 +30,13 @@ export default function About() {
           I am always on the lookout to explore more, learn more and develop my
           skill set.
           <br /> Do feel free to reach out to me if you feel you've got
-          something that would interest me or if I can be of any help to you.<br/>
-          <a href={resume} download><button className="download">Resume <MdSimCardDownload className="d_icon"/></button></a>
+          something that would interest me or if I can be of any help to you.
+          <br />
+          <a href={resume} download>
+            <button className="download">
+              Resume <MdSimCardDownload className="d_icon" />
+            </button>
+          </a>
         </div>
       </div>
     </>

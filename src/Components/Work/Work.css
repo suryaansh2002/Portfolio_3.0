@@ -73,7 +73,6 @@
   margin-top: 2rem;
   font-family: "Cinzel", serif;
   text-align: center;
-  
 }
 
 .r_more_w {
@@ -160,9 +159,9 @@
     transform: translateX(-50%);
     padding-top: 0.2rem;
   }
- .right_w {
-  font-size: 1.2rem;
-  transform: translateY(30%);
-  margin-left: 0.5rem;
-} 
+  .right_w {
+    font-size: 1.2rem;
+    transform: translateY(30%);
+    margin-left: 0.5rem;
+  }
 }

@@ -1,10 +1,10 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Skills.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import { BsFillArrowRightSquareFill } from 'react-icons/bs';
+import { BsFillArrowRightSquareFill } from "react-icons/bs";
 
 import c from "../../Assets/Skills/c.png";
 import cpp from "../../Assets/Skills/c++.png";
@@ -38,9 +38,6 @@ import flutter from "../../Assets/Skills/flutter.png";
 import canva from "../../Assets/Skills/canva.png";
 import figma from "../../Assets/Skills/figma.png";
 import node from "../../Assets/Skills/node.png";
-
-
-
 
 import SkillsCard from "./SkillsCard";
 
@@ -91,10 +88,11 @@ export default function Skills() {
       : setCarSettings(settings2);
   }, [window.innerWidth]);
 
-
   return (
     <div className="skills_main">
-      <div className="skills_header" id="skills">My Skills</div>
+      <div className="skills_header" id="skills">
+        My Skills
+      </div>
       <div className="imgslider">
         <Slider {...carSettings}>
           <SkillsCard img={c} name="C" stars={4} half={true} />
@@ -115,7 +113,12 @@ export default function Skills() {
           <SkillsCard img={html} name="ExpressJS" stars={5} half={false} />
           <SkillsCard img={css} name="ExpressJS" stars={5} half={false} />
           <SkillsCard img={ts} name="ExpressJS" stars={4} half={false} />
-          <SkillsCard img={react_native} name="ExpressJS" stars={3} half={false} />
+          <SkillsCard
+            img={react_native}
+            name="ExpressJS"
+            stars={3}
+            half={false}
+          />
           <SkillsCard img={php} name="ExpressJS" stars={3} half={true} />
           <SkillsCard img={bootstrap} name="ExpressJS" stars={5} half={false} />
 
@@ -128,12 +131,12 @@ export default function Skills() {
           <SkillsCard img={matlab} name="ExpressJS" stars={3} half={false} />
           <SkillsCard img={canva} name="ExpressJS" stars={3} half={true} />
           <SkillsCard img={figma} name="ExpressJS" stars={2} half={true} />
-
         </Slider>
       </div>
       <div className="skills_link_container">
         <Link to={"/skills"} className="skills_link">
-          Checkout my entire skill set... <BsFillArrowRightSquareFill className="arrow"/>
+          Checkout my entire skill set...{" "}
+          <BsFillArrowRightSquareFill className="arrow" />
         </Link>
       </div>
     </div>

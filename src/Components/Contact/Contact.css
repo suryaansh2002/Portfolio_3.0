@@ -1,92 +1,87 @@
-.contact_main{
-    min-height: 100vh;
-    background: rgb(0, 2, 49);
-background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
-max-width: 100vw;
-overflow-x: hidden;
-
+.contact_main {
+  min-height: 100vh;
+  background: rgb(0, 2, 49);
+  background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-.contact_header{
-    font-weight: 600;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 6rem;
-    color: white;
-    font-family: "Cinzel", serif;
-    padding-top: 4rem;
+.contact_header {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: white;
+  font-family: "Cinzel", serif;
+  padding-top: 4rem;
 }
-.logo:hover{
-    cursor: none;
+.logo:hover {
+  cursor: none;
 }
-.bitmoji{
-    position: absolute;
-    width: 32%;
-    left: -5rem;
-    transform: translateY(-60vh);
-}
-
-.logo{
-    color: white;
-    font-size: 9rem;
+.bitmoji {
+  position: absolute;
+  width: 32%;
+  left: -5rem;
+  transform: translateY(-60vh);
 }
 
-.logo_C{
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-    margin-left: 20%;
-    margin-bottom: 8rem;
-    margin-top: 11rem;
+.logo {
+  color: white;
+  font-size: 9rem;
 }
 
-.c_text{
-    color: white;
-    font-size: 2.5rem;
-    font-family: "Cinzel", serif;
-    text-align: center;
-    margin-left: 2rem;
+.logo_C {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin-left: 20%;
+  margin-bottom: 8rem;
+  margin-top: 11rem;
+}
+
+.c_text {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  margin-left: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .contact_main{
-        margin-top: -3rem;
-        padding-bottom: 2rem;
-    }
-    .contact_header{
-
+  .contact_main {
+    margin-top: -3rem;
+    padding-bottom: 2rem;
+  }
+  .contact_header {
     font-size: 7vw;
-    }
-    .bitmoji{
-        display: none;
-    }
-    .logo_C{
-        display: block;
-        width: 100vw;
-        margin-bottom: 2rem;
-        margin-top: -2rem;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
-    
-    .logo{
-        display: inline-block;
-        margin: 2rem;
-        margin-bottom: 2rem;
-        font-size: 25vw;
-        
-    }
-    .c_text{
-        color: white;
-        font-size: 4.5vw;
-        font-family: "Cinzel", serif;
-        text-align: center;
-        margin-bottom: 2rem;
-        width: 100vw;
-        margin-left: 0;
-        
-    }
-    
+  }
+  .bitmoji {
+    display: none;
+  }
+  .logo_C {
+    display: block;
+    width: 100vw;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .logo {
+    display: inline-block;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    font-size: 25vw;
+  }
+  .c_text {
+    color: white;
+    font-size: 4.5vw;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100vw;
+    margin-left: 0;
+  }
 }

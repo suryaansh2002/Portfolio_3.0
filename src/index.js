@@ -7,12 +7,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import Home from './Components/Home/Home';
 import Main from './Components/Main/Main';
 import SkillsPage from './Components/SkillsPage/SkillsPage';
-import Landing from './Components/Landing/Landing';
 import ProjectsPage from './Components/ProjectsPage/ProjectsPage';
 import Ridecell from './WorkPages/Ridecell/Ridecell';
 import Apt from './WorkPages/APT/Apt';

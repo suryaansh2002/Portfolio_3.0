@@ -123,6 +123,7 @@ export default function Ridecell() {
           <div className="img_container">
             <img src={ridecell} className="ridecell_logo" />
           </div>
+          <div className="img_cont_bg"></div>
         </div>
         <div className="rc1_right">
           <div className="about_comp">About The Company</div>
@@ -162,20 +163,20 @@ export default function Ridecell() {
             mobile apps that had finished development. Since manual testing of
             most of the test cases was perform by a separate team, I built upon
             their work to automate the test cases which were functioning
-            manually, using Selenium and Appium, and subsequently adding the automated test
-            cases to the existing CI/CD pipeline, to detect, test and report any
-            breaking changes as new versions were deployed.
+            manually, using Selenium and Appium, and subsequently adding the
+            automated test cases to the existing CI/CD pipeline, to detect, test
+            and report any breaking changes as new versions were deployed.
           </p>
         </div>
         <div className="rc2_right">
           <div className="skillsH">Tools and Technologies Used</div>
           <div className="skil_set">
-          <div className="work_skill">Python</div>
-          <div className="work_skill">Pytest</div>
-          <div className="work_skill">RestAPIs</div>
-          <div className="work_skill">Selenium</div>
-          <div className="work_skill">Appium</div>
-          <div className="work_skill">Testrail</div>
+            <div className="work_skill">Python</div>
+            <div className="work_skill">Pytest</div>
+            <div className="work_skill">RestAPIs</div>
+            <div className="work_skill">Selenium</div>
+            <div className="work_skill">Appium</div>
+            <div className="work_skill">Testrail</div>
           </div>
         </div>
       </div>
