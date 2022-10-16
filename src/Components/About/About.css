@@ -2,13 +2,13 @@
   height: 100vh;
   background: rgb(0, 2, 49);
   background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  color: white;
 }
 
 .about_header {
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
-  color: white;
   font-family: "Cinzel", serif;
   padding-top: 4rem;
   height: 6rem;
@@ -39,7 +39,6 @@
 }
 
 .about_txt {
-  color: white;
   font-size: 1.6rem;
   display: inline-block;
   height: 50vh;
@@ -58,13 +57,29 @@
   padding-top: 0.2rem;
   border-radius: 50px;
 }
-
+#download_light{
+  margin-top: 4rem;
+  margin-left: 30%;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: "Roboto";
+  padding: 0.5rem 1rem;
+  padding-top: 0.2rem;
+  border-radius: 50px;
+}
 .d_icon {
   margin-left: 0.25rem;
   font-size: 1.8rem;
   transform: translateY(15%);
 }
-
+#d_icon_light {
+  margin-left: 0.25rem;
+  font-size: 1.8rem;
+  transform: translateY(15%);
+  color: white;
+}
 .letter {
   transition: 0.2s;
   font-size: 2.5rem;
@@ -75,7 +90,6 @@
 
 @media only screen and (max-width: 600px) {
   .about_txt {
-    color: white;
     font-size: 1rem;
     display: inline-block;
     height: 50vh;
@@ -122,7 +136,6 @@
     margin-top: 1.5rem;
     margin-left: 30%;
     font-size: 1.1rem;
-    background-color: white;
     font-family: "Roboto";
     padding: 0.5rem 1rem;
     padding-top: 0.1rem;

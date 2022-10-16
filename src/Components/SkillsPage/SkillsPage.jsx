@@ -37,6 +37,7 @@ import flutter from "../../Assets/Skills/flutter.png";
 import canva from "../../Assets/Skills/canva.png";
 import figma from "../../Assets/Skills/figma.png";
 import node from "../../Assets/Skills/node.png";
+import Header from "../Header/Header";
 
 export default function SkillsPage() {
   const particlesInit = useCallback(async (engine) => {
@@ -53,6 +54,7 @@ export default function SkillsPage() {
 
   return (
     <>
+    <Header/>
       <AnimatedCursor
         innerSize={20}
         outerSize={20}

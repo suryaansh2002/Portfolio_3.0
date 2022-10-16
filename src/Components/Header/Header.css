@@ -33,6 +33,20 @@
 #last_link {
   border: none;
 }
+.themeicon{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 2rem
+}
+.themeicon_light{
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  right: 2rem
+}
 .header_logo {
   position: absolute;
   width: 40px;
@@ -40,6 +54,10 @@
   margin-left: 1rem;
 }
 
+.themeBtn{
+  border: none;
+  background: transparent;
+}
 @media only screen and (max-width: 600px) {
   .header_links {
     display: none;

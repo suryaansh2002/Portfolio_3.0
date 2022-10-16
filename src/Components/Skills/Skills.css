@@ -2,17 +2,15 @@
   background-color: black;
   min-height: 100vh;
   background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  color: white;
 }
 .skills_header {
   font-weight: 600;
-  color: rgb(93, 183, 128);
   font-size: 3rem;
   text-align: center;
   font-family: "Lato", sans-serif;
   margin-bottom: 6rem;
-  color: white;
   font-family: "Cinzel", serif;
-
   padding-top: 4rem;
 }
 .skills_card_container {
@@ -57,7 +55,6 @@
 }
 .skills_stars {
   font-size: 1.8rem;
-  color: rgb(93, 183, 128);
   color: gold;
   text-align: center;
   visibility: hidden;
@@ -80,16 +77,18 @@
   text-decoration: underline;
 }
 .skills_link {
-  color: rgb(93, 183, 128);
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
-  color: white;
   font-family: "Cinzel", serif;
   font-family: "Roboto";
   text-transform: capitalize;
+  color: white;
 }
 
+#skills_link_light{
+  color: black;
+}
 .skills_link:hover {
   cursor: pointer;
 }
@@ -105,6 +104,27 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .skills_card {
+    width: 70vw;
+    height: 18rem;
+    background-color: rgba(255, 255, 255, 0.4);
+  
+    box-shadow: 5px 5px 20px 0px rgb(55, 55, 103);
+    border-radius: 20px;
+    margin: 0rem 5vw;
+    display: inline-block;
+    background: transparent;
+  }
+  
+  .skills_card_img {
+    height: 11rem;
+    width: 11rem;
+    transition: 1s;
+    margin: 2.5rem 2rem;
+    /* height: 10rem;   */
+  }
+  
   .imgslider {
     margin-left: -1rem;
   }
@@ -113,10 +133,9 @@
     padding-top: 6rem;
   }
   .skills_link {
-    font-size: 5vw;
+    font-size: 4vw;
     text-decoration: none;
     font-weight: 400;
-    color: white;
     font-family: "Cinzel", serif;
     font-family: "Roboto";
     text-transform: capitalize;

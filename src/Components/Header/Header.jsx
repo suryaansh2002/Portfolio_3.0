@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
-export default function Header() {
+import {BsSunFill,BsFillMoonFill} from 'react-icons/bs';
+export default function Header(props) {
   return (
-    <div className="header_box">
+    <div className="header_box" id={props.light?"lightid":null}>
       <img src={logo} className="header_logo" />
       <div className="header_links">
         <a className="header_link" href={"/"}>
@@ -25,6 +26,7 @@ export default function Header() {
           Contact
         </a>
       </div>
+      <button className="themeBtn" onClick={()=>props.setLight(!props.light)}>{props.light ? <BsFillMoonFill className="themeicon_light"/>:<BsSunFill className="themeicon"/>}</button>
       {/* <button className="resume">Resume <GrDocumentDownload/></button> */}
     </div>
   );

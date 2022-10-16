@@ -5,6 +5,7 @@ import santanet from "../../Assets/Work/santanet.png";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
 import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
+import Header from "../../Components/Header/Header";
 
 export default function Santanet() {
   const particlesInit = useCallback(async (engine) => {
@@ -19,6 +20,7 @@ export default function Santanet() {
   return (
     <div>
       <div className="workex_main">
+      <Header/>
         <AnimatedCursor
           innerSize={20}
           outerSize={20}
@@ -122,6 +124,8 @@ export default function Santanet() {
 
         <div className="rc1">
           <div className="rc1_left">
+          <div className="work_img_box">
+
             <div className="img_container">
               <img
                 src={santanet}
@@ -130,6 +134,7 @@ export default function Santanet() {
               />
             </div>
             <div className="img_cont_bg"></div>
+            </div>
           </div>
           <div className="rc1_right">
             <div className="about_comp">About The Company</div>

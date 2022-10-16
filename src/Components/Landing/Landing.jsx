@@ -4,9 +4,9 @@ import $ from "jquery";
 import main from "../../Assets/main.png";
 import Typewriter from "typewriter-effect";
 
-export default function Landing() {
+export default function Landing(props) {
   return (
-    <div className="landing_main ">
+    <div className="landing_main" id={props.light?"lightid":null}>
       <img src={main} className="landing_profile" />
       <a
         href=""

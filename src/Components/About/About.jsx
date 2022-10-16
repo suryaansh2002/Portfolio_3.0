@@ -3,10 +3,10 @@ import "./About.css";
 import me from "../../Assets/me.png";
 import { MdSimCardDownload } from "react-icons/md";
 import resume from "../../Assets/SuryaanshRathinam_Resume.pdf";
-export default function About() {
+export default function About(props) {
   return (
     <>
-      <div className="about_main">
+      <div className="about_main" id={props.light?"lightid":null}>
         <div className="about_header" id="about">
           <span className="letter">W</span>
           <span className="letter">h</span>
@@ -33,8 +33,8 @@ export default function About() {
           something that would interest me or if I can be of any help to you.
           <br />
           <a href={resume} download>
-            <button className="download">
-              Resume <MdSimCardDownload className="d_icon" />
+            <button className="download" id={props.light?"download_light":null}>
+              Resume <MdSimCardDownload className="d_icon" id={props.light?"d_icon_light":null}/>
             </button>
           </a>
         </div>

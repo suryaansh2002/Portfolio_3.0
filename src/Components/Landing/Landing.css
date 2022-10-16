@@ -6,14 +6,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 
+
 .landing_main {
   width: 100vw;
   height: 100vh;
-  background-color: black;
   overflow-x: hidden;
   font-family: "Uchen", sans-serif;
   background: rgb(0, 0, 0);
   background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  color: white;
 }
 body {
   overflow-x: hidden;
@@ -36,7 +37,6 @@ div .a,
   opacity: 0.3;
 }
 .landing_name {
-  color: white;
   font-size: 90px;
   position: absolute;
   top: 35vh;
@@ -74,4 +74,11 @@ div .a,
     text-align: center;
     line-height: 8vw;
   }
+}
+
+
+#lightid{
+  background: white !important;
+  color: black !important;
+
 }

@@ -41,7 +41,7 @@ import node from "../../Assets/Skills/node.png";
 
 import SkillsCard from "./SkillsCard";
 
-export default function Skills() {
+export default function Skills(props) {
   const [carSettings, setCarSettings] = useState();
 
   var settings = {
@@ -89,7 +89,7 @@ export default function Skills() {
   }, [window.innerWidth]);
 
   return (
-    <div className="skills_main">
+    <div className="skills_main" id={props.light?"lightid":null}>
       <div className="skills_header" id="skills">
         My Skills
       </div>
@@ -134,7 +134,7 @@ export default function Skills() {
         </Slider>
       </div>
       <div className="skills_link_container">
-        <Link to={"/skills"} className="skills_link">
+        <Link to={"/skills"} className="skills_link" id={props.light?"skills_link_light":null}>
           Checkout my entire skill set...{" "}
           <BsFillArrowRightSquareFill className="arrow" />
         </Link>

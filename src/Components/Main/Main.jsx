@@ -9,8 +9,9 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 import AnimatedCursor from "react-animated-cursor";
-
+import Header from "../Header/Header";
 export default function Main() {
+  const [light, setLight] = useState(false);
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -28,10 +29,10 @@ export default function Main() {
   if (width > 768) {
     particlesObj = {
       color: {
-        value: "#ffffff",
+        value: light?"#000000":"#ffffff",
       },
       links: {
-        color: "#ffffff",
+        color: light?"#000000":"#ffffff",
         distance: 100,
         enable: true,
         opacity: 0.25,
@@ -70,11 +71,11 @@ export default function Main() {
   } else {
     particlesObj = {
       color: {
-        value: "#ffffff",
+        value: light?"#000000":"#ffffff",
       },
       nb: Math.round(Math.sqrt(width)),
       links: {
-        color: "#ffffff",
+        color: light?"#000000":"#ffffff",
         distance: 50,
         enable: true,
         opacity: 0.25,
@@ -113,11 +114,13 @@ export default function Main() {
   }
 
   return (
-    <>
+    <div id={light ? "lightid": null}>
+      <Header light={light} setLight={setLight}/>
+
       <AnimatedCursor
         innerSize={20}
         outerSize={20}
-        color="255, 255, 255"
+        color={light?"0,0,0":"255, 255, 255"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
@@ -171,12 +174,12 @@ export default function Main() {
         }}
       />
 
-      <Landing />
-      <About />
-      <Skills />
-      <Projects />
-      <Work />
-      <Contact />
-    </>
+      <Landing light={light} setLight={setLight}/>
+      <About light={light} setLight={setLight}/>
+      <Skills light={light} setLight={setLight}/>
+      <Projects light={light} setLight={setLight}/>
+      <Work light={light} setLight={setLight}/>
+      <Contact light={light} setLight={setLight}/>
+    </div>
   );
 }

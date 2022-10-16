@@ -15,6 +15,7 @@ import todo from "../../Assets/Skills/todo.png";
 
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { HiGlobeAlt } from "react-icons/hi";
+import Header from "../Header/Header";
 
 export default function ProjectsPage() {
   const particlesInit = useCallback(async (engine) => {
@@ -31,6 +32,7 @@ export default function ProjectsPage() {
 
   return (
     <>
+    <Header/>
       <AnimatedCursor
         innerSize={20}
         outerSize={20}

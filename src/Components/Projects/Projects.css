@@ -3,10 +3,8 @@
   background: rgb(0, 2, 49);
   background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
   max-width: 100vw;
+  color: white;
   overflow-x: hidden;
-  /* background: linear-gradient(36deg, rgba(0,5,133,0.7178221630449055) 0%, rgba(231,248,254,0.9054972330729166) 44%); */
-  /* background: rgb(0,2,63); */
-  /* background: linear-gradient(36deg, rgba(19, 23, 126, 0.718) 0%, rgba(19, 23, 126, 0.5) 10%, rgb(226, 233, 235) 60%); */
 }
 
 .projects_header {
@@ -14,7 +12,6 @@
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: white;
   font-family: "Cinzel", serif;
   padding-top: 4rem;
 }
@@ -103,16 +100,14 @@
   height: 30rem;
 }
 .morep {
-  color: white;
   text-align: right;
   font-size: 1.1rem;
   font-family: "Cinzel", serif;
   margin-right: 5rem;
   margin-bottom: 2rem;
 }
-
-.morep a {
-  color: white;
+#lightid a{
+  color: black;
 }
 @media only screen and (max-width: 600px) {
   .projects_header {
@@ -120,6 +115,7 @@
   }
   .card_c {
     width: 100vw;
+    margin-left: 0rem !important;
   }
   .mainc {
     transform: translateX(-7.5%);
@@ -127,6 +123,30 @@
   .morep {
     width: max-content;
     margin-left: 100vw;
-    transform: translateX(-110%);
+    transform: translateX(-120%);
+    font-size: .25vw;
+  }
+  #more_link{
+    font-size: 4vw;
+  }
+  .proj_card {
+    width: 18rem !important;
+    height: 25rem;
+    background-color: rgb(5, 0, 54);
+    margin: 0rem 4.5rem;
+    box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
+    padding-top: 2rem;
+    position: relative;
+    z-index: 100;
+  }
+  .inner_card {
+    width: 17.25rem !important;
+    height: 25rem;
+    border: 3px solid rgba(27, 57, 176, 0.5);
+    background-color: rgba(27, 57, 176, 0.5);
+    margin-left: 3.5rem;
+    margin-top: 1.2rem;
+    position: relative;
+    transform: translateY(-100%) translateX(2.5rem);
   }
 }

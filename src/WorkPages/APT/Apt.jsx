@@ -6,6 +6,7 @@ import apt from "../../Assets/Work/apt2.png";
 import "./Apt.css";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
+import Header from "../../Components/Header/Header";
 
 export default function Apt() {
   const particlesInit = useCallback(async (engine) => {
@@ -19,6 +20,7 @@ export default function Apt() {
 
   return (
     <div>
+    <Header/>
       <div className="workex_main">
         <AnimatedCursor
           innerSize={20}
@@ -123,10 +125,13 @@ export default function Apt() {
 
         <div className="rc1">
           <div className="rc1_left">
+          <div className="work_img_box">
+
             <div className="img_container">
               <img src={apt} className="ridecell_logo" id="apt_logo" />
             </div>
             <div className="img_cont_bg"></div>
+          </div>'
           </div>
           <div className="rc1_right">
             <div className="about_comp">About The Company</div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './index.css';
 import ReactDOM from 'react-dom/client';
 import {
@@ -20,7 +20,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-  <Header/>
     <Routes>
       <Route path="/" element={<Main/>}/>
       <Route path='skills' element={<SkillsPage/>}/>

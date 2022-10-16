@@ -5,6 +5,7 @@ import ridecell from "../../Assets/Work/ridecell.png";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
 import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
+import Header from "../../Components/Header/Header";
 
 export default function Ridecell() {
   const particlesInit = useCallback(async (engine) => {
@@ -17,6 +18,7 @@ export default function Ridecell() {
   }, []);
   return (
     <div className="workex_main">
+    <Header/>
       <AnimatedCursor
         innerSize={20}
         outerSize={20}
@@ -120,10 +122,12 @@ export default function Ridecell() {
 
       <div className="rc1">
         <div className="rc1_left">
-          <div className="img_container">
-            <img src={ridecell} className="ridecell_logo" />
+          <div className='work_img_box'>
+            <div className="img_container">
+              <img src={ridecell} className="ridecell_logo" />
+            </div>
+            <div className="img_cont_bg"></div>
           </div>
-          <div className="img_cont_bg"></div>
         </div>
         <div className="rc1_right">
           <div className="about_comp">About The Company</div>
