@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import "./ProjectsPage.css";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
@@ -18,6 +18,8 @@ import { HiGlobeAlt } from "react-icons/hi";
 import Header from "../Header/Header";
 
 export default function ProjectsPage() {
+  const [light, setLight] = useState(false);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -30,13 +32,102 @@ export default function ProjectsPage() {
     await console.log(container);
   }, []);
 
+  var particlesObj;
+  var width = window.innerWidth;
+  if (width > 768) {
+    particlesObj = {
+      color: {
+        value: light ? "#000000" : "#ffffff",
+      },
+      links: {
+        color: light ? "#000000" : "#ffffff",
+        distance: 100,
+        enable: true,
+        opacity: 0.25,
+        width: 1,
+      },
+      collisions: {
+        enable: false,
+      },
+      move: {
+        directions: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: true,
+        speed: 4,
+        straight: true,
+      },
+      number: {
+        density: {
+          enable: false,
+          area: 600,
+        },
+        value: 100,
+      },
+      opacity: {
+        value: 0.25,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 3,
+      },
+    };
+  } else {
+    particlesObj = {
+      color: {
+        value: light ? "#000000" : "#ffffff",
+      },
+      nb: Math.round(Math.sqrt(width)),
+      links: {
+        color: light ? "#000000" : "#ffffff",
+        distance: 50,
+        enable: true,
+        opacity: 0.25,
+        width: 0.6,
+      },
+      collisions: {
+        enable: false,
+      },
+      move: {
+        directions: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: true,
+        speed: 4,
+        straight: true,
+      },
+      number: {
+        density: {
+          enable: false,
+          area: 0,
+        },
+        value: 50,
+      },
+      opacity: {
+        value: 0.25,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 2,
+      },
+    };
+  }
+
   return (
     <>
-    <Header/>
+      <Header light={light} setLight={setLight} />
       <AnimatedCursor
         innerSize={20}
         outerSize={20}
-        color="255, 255, 255"
+        color={light ? "0,0,0" : "255, 255, 255"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
@@ -54,11 +145,13 @@ export default function ProjectsPage() {
           ".link",
         ]}
       />
+
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
+          density_auto: true,
           background: {},
           fpsLimit: 120,
           interactivity: {
@@ -83,52 +176,12 @@ export default function ProjectsPage() {
               },
             },
           },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 100,
-              enable: true,
-              opacity: 0.25,
-              width: 1,
-            },
-            collisions: {
-              enable: false,
-            },
-            move: {
-              directions: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: true,
-              speed: 4,
-              straight: true,
-            },
-            number: {
-              density: {
-                enable: false,
-                area: 600,
-              },
-              value: 100,
-            },
-            opacity: {
-              value: 0.25,
-            },
-            shape: {
-              type: "square",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
+          particles: particlesObj,
           detectRetina: false,
         }}
       />
 
-      <div className="projectsPage_main">
+      <div className="projectsPage_main" id={light ? "lightid" : null}>
         <div className="projectsPage_header">All Projects</div>
         <div className="card_c">
           {/*Psychup */}

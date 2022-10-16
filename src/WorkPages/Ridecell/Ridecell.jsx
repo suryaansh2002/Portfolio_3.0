@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import "./Ridecell.css";
 import { loadFull } from "tsparticles";
 import ridecell from "../../Assets/Work/ridecell.png";
@@ -8,6 +8,8 @@ import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
 import Header from "../../Components/Header/Header";
 
 export default function Ridecell() {
+  const [light, setLight] = useState(false);
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -16,13 +18,102 @@ export default function Ridecell() {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
+  var particlesObj;
+  var width = window.innerWidth;
+  if (width > 768) {
+    particlesObj = {
+      color: {
+        value: light ? "#000000" : "#ffffff",
+      },
+      links: {
+        color: light ? "#000000" : "#ffffff",
+        distance: 100,
+        enable: true,
+        opacity: 0.25,
+        width: 1,
+      },
+      collisions: {
+        enable: false,
+      },
+      move: {
+        directions: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: true,
+        speed: 4,
+        straight: true,
+      },
+      number: {
+        density: {
+          enable: false,
+          area: 600,
+        },
+        value: 100,
+      },
+      opacity: {
+        value: 0.25,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 3,
+      },
+    };
+  } else {
+    particlesObj = {
+      color: {
+        value: light ? "#000000" : "#ffffff",
+      },
+      nb: Math.round(Math.sqrt(width)),
+      links: {
+        color: light ? "#000000" : "#ffffff",
+        distance: 50,
+        enable: true,
+        opacity: 0.25,
+        width: 0.6,
+      },
+      collisions: {
+        enable: false,
+      },
+      move: {
+        directions: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: true,
+        speed: 4,
+        straight: true,
+      },
+      number: {
+        density: {
+          enable: false,
+          area: 0,
+        },
+        value: 50,
+      },
+      opacity: {
+        value: 0.25,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: 2,
+      },
+    };
+  }
+
   return (
-    <div className="workex_main">
-    <Header/>
+    <div className="workex_main" id={light ? "lightid" : null}>
+      <Header light={light} setLight={setLight} />
       <AnimatedCursor
         innerSize={20}
         outerSize={20}
-        color="255, 255, 255"
+        color={light ? "0,0,0" : "255, 255, 255"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
@@ -46,6 +137,7 @@ export default function Ridecell() {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
+          density_auto: true,
           background: {},
           fpsLimit: 120,
           interactivity: {
@@ -70,47 +162,7 @@ export default function Ridecell() {
               },
             },
           },
-          particles: {
-            color: {
-              value: "#ffffff",
-            },
-            links: {
-              color: "#ffffff",
-              distance: 100,
-              enable: true,
-              opacity: 0.25,
-              width: 1,
-            },
-            collisions: {
-              enable: false,
-            },
-            move: {
-              directions: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: true,
-              speed: 4,
-              straight: true,
-            },
-            number: {
-              density: {
-                enable: false,
-                area: 600,
-              },
-              value: 100,
-            },
-            opacity: {
-              value: 0.25,
-            },
-            shape: {
-              type: "square",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
+          particles: particlesObj,
           detectRetina: false,
         }}
       />
@@ -122,7 +174,7 @@ export default function Ridecell() {
 
       <div className="rc1">
         <div className="rc1_left">
-          <div className='work_img_box'>
+          <div className="work_img_box">
             <div className="img_container">
               <img src={ridecell} className="ridecell_logo" />
             </div>

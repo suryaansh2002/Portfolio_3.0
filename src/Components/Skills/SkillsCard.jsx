@@ -9,7 +9,6 @@ export default function SkillsCard(props) {
   for (let index = 0; index < props.stars; index++) {
     arr.push(index);
   }
-  console.log(arr);
   return (
     <div className="skills_card_container">
       <div className="skills_card">

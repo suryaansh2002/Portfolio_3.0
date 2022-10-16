@@ -3,9 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
-
 
 .landing_main {
   width: 100vw;
@@ -61,24 +59,23 @@ div .a,
   .landing_profile {
     left: 50%;
     transform: translateX(-50%);
-    top: 50vh;
-    width: 65vw;
+    top: 40vh;
+    width: 80vw;
   }
   .landing_name {
-    font-size: 7.5vw;
+    font-size: 8.5vw;
     position: absolute;
     top: 20vh;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 900;
     text-align: center;
-    line-height: 8vw;
+    line-height: 12vw;
+    width: 100vw;
   }
 }
 
-
-#lightid{
+#lightid {
   background: white !important;
   color: black !important;
-
 }

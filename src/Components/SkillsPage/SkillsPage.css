@@ -4,11 +4,10 @@
   padding-top: 5rem;
   margin-bottom: 0;
   padding-bottom: 0;
+  color: white;
 }
 .skillsPage_header {
   font-weight: 600;
-  color: rgb(93, 183, 128);
-  color: white;
   font-size: 3rem;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -20,8 +19,6 @@
 .skillsPage_text {
   text-align: center;
   font-size: 1.2rem;
-  color: rgb(93, 183, 128);
-  color: white;
   font-family: "Lato", serif;
   width: 50%;
   margin-left: 25%;

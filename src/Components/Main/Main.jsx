@@ -29,10 +29,10 @@ export default function Main() {
   if (width > 768) {
     particlesObj = {
       color: {
-        value: light?"#000000":"#ffffff",
+        value: light ? "#000000" : "#ffffff",
       },
       links: {
-        color: light?"#000000":"#ffffff",
+        color: light ? "#000000" : "#ffffff",
         distance: 100,
         enable: true,
         opacity: 0.25,
@@ -71,11 +71,11 @@ export default function Main() {
   } else {
     particlesObj = {
       color: {
-        value: light?"#000000":"#ffffff",
+        value: light ? "#000000" : "#ffffff",
       },
       nb: Math.round(Math.sqrt(width)),
       links: {
-        color: light?"#000000":"#ffffff",
+        color: light ? "#000000" : "#ffffff",
         distance: 50,
         enable: true,
         opacity: 0.25,
@@ -113,14 +113,19 @@ export default function Main() {
     };
   }
 
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "true") {
+      setLight(true);
+    }
+  }, []);
   return (
-    <div id={light ? "lightid": null}>
-      <Header light={light} setLight={setLight}/>
+    <div id={light ? "lightid" : null}>
+      <Header light={light} setLight={setLight} />
 
       <AnimatedCursor
         innerSize={20}
         outerSize={20}
-        color={light?"0,0,0":"255, 255, 255"}
+        color={light ? "0,0,0" : "255, 255, 255"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
@@ -174,12 +179,12 @@ export default function Main() {
         }}
       />
 
-      <Landing light={light} setLight={setLight}/>
-      <About light={light} setLight={setLight}/>
-      <Skills light={light} setLight={setLight}/>
-      <Projects light={light} setLight={setLight}/>
-      <Work light={light} setLight={setLight}/>
-      <Contact light={light} setLight={setLight}/>
+      <Landing light={light} setLight={setLight} />
+      <About light={light} setLight={setLight} />
+      <Skills light={light} setLight={setLight} />
+      <Projects light={light} setLight={setLight} />
+      <Work light={light} setLight={setLight} />
+      <Contact light={light} setLight={setLight} />
     </div>
   );
 }

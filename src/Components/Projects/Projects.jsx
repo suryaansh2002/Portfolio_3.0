@@ -8,12 +8,14 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { HiGlobeAlt } from "react-icons/hi";
 export default function Projects(props) {
   return (
-    <div className="projects_main" id={props.light?"lightid":null}>
+    <div className="projects_main" id={props.light ? "lightid" : null}>
       <div className="projects_header" id="projects">
         My Projects
       </div>
       <div className="morep">
-        <a href="/projects" id="more_link">More Projects...</a>
+        <a href="/projects" id="more_link">
+          More Projects...
+        </a>
       </div>
       <div className="card_c">
         {/*Psychup */}

@@ -33,19 +33,19 @@
 #last_link {
   border: none;
 }
-.themeicon{
+.themeicon {
   font-size: 2rem;
   color: white;
   position: absolute;
   top: 1rem;
-  right: 2rem
+  right: 2rem;
 }
-.themeicon_light{
+.themeicon_light {
   font-size: 2rem;
   color: black;
   position: absolute;
   top: 1rem;
-  right: 2rem
+  right: 2rem;
 }
 .header_logo {
   position: absolute;
@@ -54,7 +54,7 @@
   margin-left: 1rem;
 }
 
-.themeBtn{
+.themeBtn {
   border: none;
   background: transparent;
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
-import {BsSunFill,BsFillMoonFill} from 'react-icons/bs';
+import { BsSunFill, BsFillMoonFill } from "react-icons/bs";
 export default function Header(props) {
   return (
-    <div className="header_box" id={props.light?"lightid":null}>
+    <div className="header_box" id={props.light ? "lightid" : null}>
       <img src={logo} className="header_logo" />
       <div className="header_links">
         <a className="header_link" href={"/"}>
@@ -26,7 +26,19 @@ export default function Header(props) {
           Contact
         </a>
       </div>
-      <button className="themeBtn" onClick={()=>props.setLight(!props.light)}>{props.light ? <BsFillMoonFill className="themeicon_light"/>:<BsSunFill className="themeicon"/>}</button>
+      <button
+        className="themeBtn"
+        onClick={() => {
+          localStorage.setItem("theme", !props.light);
+          props.setLight(!props.light);
+        }}
+      >
+        {props.light ? (
+          <BsFillMoonFill className="themeicon_light" />
+        ) : (
+          <BsSunFill className="themeicon" />
+        )}
+      </button>
       {/* <button className="resume">Resume <GrDocumentDownload/></button> */}
     </div>
   );
