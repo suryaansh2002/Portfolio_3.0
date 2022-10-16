@@ -130,8 +130,8 @@
     font-size: 4vw;
   }
   .proj_card {
-    width: 18rem !important;
-    height: 25rem;
+    width: 17rem !important;
+    height: 23rem !important;
     background-color: rgb(5, 0, 54);
     margin: 0rem 4.5rem;
     box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
@@ -140,13 +140,23 @@
     z-index: 100;
   }
   .inner_card {
-    width: 17.25rem !important;
-    height: 25rem;
+    width: 16.25rem !important;
+    height: 23rem !important;
     border: 3px solid rgba(27, 57, 176, 0.5);
     background-color: rgba(27, 57, 176, 0.5);
     margin-left: 3.5rem;
     margin-top: 1.2rem;
     position: relative;
     transform: translateY(-100%) translateX(2.5rem);
+  }
+  .proj_title{
+    font-size: 1.25rem !important;
+  }
+  .proj_text{
+    font-size: 1rem !important;
+
+  }
+  .picon{
+    font-size: 1.5rem !important;
   }
 }

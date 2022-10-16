@@ -175,4 +175,12 @@
     transform: translateY(30%);
     margin-left: 0.5rem;
   }
+  .work_main {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+    min-height: 100vh;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
 }
