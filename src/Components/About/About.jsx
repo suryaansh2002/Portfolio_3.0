@@ -19,8 +19,8 @@ export default function About(props) {
           <span className="letter">? </span>
         </div>
         <div className="left">
-          <img src={me} className="me" />
-          <div className="leftBg"></div>
+          <img src={me} className="me" id={props.light?'light_me':null} />
+          <div className="leftBg" id={props.light ? 'light_imgBg':null}></div>
         </div>
         <div className="about_txt">
           I am Suryaansh Rathinam, a Computer Science Undergrad at Manipal

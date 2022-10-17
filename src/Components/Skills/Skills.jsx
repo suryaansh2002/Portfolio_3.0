@@ -25,6 +25,7 @@ import html from "../../Assets/Skills/html.png";
 import css from "../../Assets/Skills/css.png";
 import ts from "../../Assets/Skills/typescript.png";
 import react_native from "../../Assets/Skills/r-native.png";
+import react_native_dark from "../../Assets/Skills/r-native_dark.png";
 import bootstrap from "../../Assets/Skills/bootstrap.png";
 import php from "../../Assets/Skills/php.png";
 
@@ -95,42 +96,104 @@ export default function Skills(props) {
       </div>
       <div className="imgslider">
         <Slider {...carSettings}>
-          <SkillsCard img={c} name="C" stars={4} half={true} />
-          <SkillsCard img={cpp} name="C++" stars={4} half={false} />
-          <SkillsCard img={python} name="Python" stars={4} half={true} />
-          <SkillsCard img={java} name="Java" stars={3} half={true} />
-          <SkillsCard img={js} name="JavaScript" stars={5} half={false} />
-          <SkillsCard img={react} name="React JS" stars={4} half={true} />
-          <SkillsCard img={mongo} name="MongoDB" stars={4} half={false} />
-          <SkillsCard img={express} name="ExpressJS" stars={4} half={false} />
-          <SkillsCard img={node} name="ExpressJS" stars={4} half={false} />
-
-          <SkillsCard img={firebase} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={appium} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={docker} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={aws} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={django} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={html} name="ExpressJS" stars={5} half={false} />
-          <SkillsCard img={css} name="ExpressJS" stars={5} half={false} />
-          <SkillsCard img={ts} name="ExpressJS" stars={4} half={false} />
           <SkillsCard
-            img={react_native}
-            name="ExpressJS"
+            img={c}
+            light={props.light}
+            name="C"
+            stars={4}
+            half={true}
+          />
+          <SkillsCard
+            img={cpp}
+            light={props.light}
+            name="C++"
+            stars={4}
+            half={false}
+          />
+          <SkillsCard
+            img={python}
+            light={props.light}
+            name="Python"
+            stars={4}
+            half={true}
+          />
+          <SkillsCard
+            img={java}
+            light={props.light}
+            name="Java"
+            stars={3}
+            half={true}
+          />
+          <SkillsCard
+            img={js}
+            light={props.light}
+            name="JavaScript"
+            stars={5}
+            half={false}
+          />
+          <SkillsCard
+            img={react}
+            light={props.light}
+            name="React JS"
+            stars={4}
+            half={true}
+          />
+          <SkillsCard
+            img={mongo}
+            light={props.light}
+            name="MongoDB"
+            stars={4}
+            half={false}
+          />
+          <SkillsCard
+            img={express}
+            light={props.light}
+            stars={4}
+            half={false}
+          />
+          <SkillsCard img={node} light={props.light} stars={4} half={false} />
+
+          <SkillsCard
+            img={firebase}
+            light={props.light}
             stars={3}
             half={false}
           />
-          <SkillsCard img={php} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={bootstrap} name="ExpressJS" stars={5} half={false} />
+          <SkillsCard img={appium} light={props.light} stars={3} half={true} />
+          <SkillsCard img={docker} light={props.light} stars={3} half={false} />
+          <SkillsCard img={aws} light={props.light} stars={3} half={false} />
+          <SkillsCard img={django} light={props.light} stars={3} half={true} />
+          <SkillsCard img={html} light={props.light} stars={5} half={false} />
+          <SkillsCard img={css} light={props.light} stars={5} half={false} />
+          <SkillsCard img={ts} light={props.light} stars={4} half={false} />
+          <SkillsCard
+            img={props.light ? react_native: react_native_dark}
+            stars={3}
+            half={false}
+            light={props.light}
+          />
+          <SkillsCard light={props.light} img={php} stars={3} half={true} />
+          <SkillsCard
+            light={props.light}
+            img={bootstrap}
+            stars={5}
+            half={false}
+          />
 
-          <SkillsCard img={redux} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={sass} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={mysql} name="ExpressJS" stars={4} half={true} />
-          <SkillsCard img={git} name="ExpressJS" stars={4} half={true} />
-          <SkillsCard img={selenium} name="ExpressJS" stars={4} half={false} />
-          <SkillsCard img={flutter} name="ExpressJS" stars={2} half={true} />
-          <SkillsCard img={matlab} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={canva} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={figma} name="ExpressJS" stars={2} half={true} />
+          <SkillsCard light={props.light} img={redux} stars={3} half={true} />
+          <SkillsCard light={props.light} img={sass} stars={3} half={false} />
+          <SkillsCard light={props.light} img={mysql} stars={4} half={true} />
+          <SkillsCard light={props.light} img={git} stars={4} half={true} />
+          <SkillsCard
+            light={props.light}
+            img={selenium}
+            stars={4}
+            half={false}
+          />
+          <SkillsCard light={props.light} img={flutter} stars={2} half={true} />
+          <SkillsCard light={props.light} img={matlab} stars={3} half={false} />
+          <SkillsCard light={props.light} img={canva} stars={3} half={true} />
+          <SkillsCard light={props.light} img={figma} stars={2} half={true} />
         </Slider>
       </div>
       <div className="skills_link_container">

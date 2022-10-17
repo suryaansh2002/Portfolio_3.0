@@ -29,10 +29,10 @@ export default function Main() {
   if (width > 768) {
     particlesObj = {
       color: {
-        value: light ? "#000000" : "#ffffff",
+        value: light ? "#3c3c40" : "#ffffff",
       },
       links: {
-        color: light ? "#000000" : "#ffffff",
+        color: light ? "#3c3c40" : "#ffffff",
         distance: 100,
         enable: true,
         opacity: 0.25,

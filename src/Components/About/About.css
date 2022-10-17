@@ -29,6 +29,15 @@
   position: relative;
   z-index: 200;
 }
+#light_me{
+  box-shadow: 5px 3px 5px white;
+
+}
+
+#light_imgBg{
+  border: 2px solid black;
+
+}
 .leftBg {
   border-radius: 5px;
   width: 22rem;
@@ -61,8 +70,9 @@
   margin-top: 4rem;
   margin-left: 30%;
   font-size: 1.4rem;
-  background-color: black;
+  background-color: rgb(8, 1, 38);
   color: white;
+  box-shadow: 2px 4px 4px gray;
   border: none;
   font-family: "Roboto";
   padding: 0.5rem 1rem;

@@ -15,11 +15,11 @@ export default function SkillsCard(props) {
         <img src={props.img} className="skills_card_img" />
         <div className="skills_stars">
           {arr.map((item) => (
-            <FontAwesomeIcon icon={faStar} className="star" />
+            <FontAwesomeIcon icon={faStar} className="star" id={props.light? "light_star":null}/>
           ))}
 
           {props.half ? (
-            <FontAwesomeIcon icon={faStarHalf} className="star" />
+            <FontAwesomeIcon icon={faStarHalf} className="star"  id={props.light? "light_star":null} />
           ) : null}
         </div>
       </div>

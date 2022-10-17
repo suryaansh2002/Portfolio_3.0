@@ -37,6 +37,10 @@
   margin-top: 2rem;
 }
 
+#light_star{
+  color: rgb(21, 0, 92) !important; 
+ }
+ 
 @media only screen and (max-width: 600px) {
   .skillsPage_header {
     font-size: 6.5vw;

@@ -76,6 +76,12 @@ div .a,
 }
 
 #lightid {
-  background: white !important;
+  /* background: white !important; */
+  /* background: rgb(237,237,237);
+background: linear-gradient(125deg, rgba(237,237,237,0.7178221630449055) 22%, rgba(58,83,145,1) 99%); */
+background: rgb(237,237,237);
+/* background: linear-gradient(223deg, rgba(237,237,237,0.7178221630449055) 50%, rgba(58,83,145,1) 99%); */
+background: linear-gradient(223deg, rgba(237,237,237,0.7178221630449055) 50%, rgba(113,139,204,1) 99%);
+
   color: black !important;
 }

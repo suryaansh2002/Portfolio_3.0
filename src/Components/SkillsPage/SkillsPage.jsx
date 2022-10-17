@@ -24,6 +24,8 @@ import html from "../../Assets/Skills/html.png";
 import css from "../../Assets/Skills/css.png";
 import ts from "../../Assets/Skills/typescript.png";
 import react_native from "../../Assets/Skills/r-native.png";
+import react_native_dark from "../../Assets/Skills/r-native_dark.png";
+
 import bootstrap from "../../Assets/Skills/bootstrap.png";
 import php from "../../Assets/Skills/php.png";
 
@@ -214,42 +216,42 @@ export default function SkillsPage(props) {
           worked on during this time.
         </div>
         <div className="skillsPage_cards">
-          <SkillsCard img={c} name="C" stars={4} half={true} />
-          <SkillsCard img={cpp} name="C++" stars={4} half={false} />
-          <SkillsCard img={python} name="Python" stars={4} half={true} />
-          <SkillsCard img={java} name="Java" stars={3} half={true} />
-          <SkillsCard img={js} name="JavaScript" stars={5} half={false} />
-          <SkillsCard img={react} name="React JS" stars={4} half={true} />
-          <SkillsCard img={mongo} name="MongoDB" stars={4} half={false} />
-          <SkillsCard img={express} name="ExpressJS" stars={4} half={false} />
-          <SkillsCard img={node} name="ExpressJS" stars={4} half={false} />
+          <SkillsCard light={light}  img={c} name="C" stars={4} half={true} />
+          <SkillsCard light={light}  img={cpp} name="C++" stars={4} half={false} />
+          <SkillsCard light={light}  img={python} name="Python" stars={4} half={true} />
+          <SkillsCard light={light}  img={java} name="Java" stars={3} half={true} />
+          <SkillsCard light={light}  img={js} name="JavaScript" stars={5} half={false} />
+          <SkillsCard light={light}  img={react} name="React JS" stars={4} half={true} />
+          <SkillsCard light={light}  img={mongo} name="MongoDB" stars={4} half={false} />
+          <SkillsCard light={light}  img={express} stars={4} half={false} />
+          <SkillsCard light={light}  img={node} stars={4} half={false} />
 
-          <SkillsCard img={firebase} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={appium} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={docker} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={aws} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={django} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={html} name="ExpressJS" stars={5} half={false} />
-          <SkillsCard img={css} name="ExpressJS" stars={5} half={false} />
-          <SkillsCard img={ts} name="ExpressJS" stars={4} half={false} />
+          <SkillsCard light={light}  img={firebase} stars={3} half={false} />
+          <SkillsCard light={light}  img={appium} stars={3} half={true} />
+          <SkillsCard light={light}  img={docker} stars={3} half={false} />
+          <SkillsCard light={light}  img={aws} stars={3} half={false} />
+          <SkillsCard light={light}  img={django} stars={3} half={true} />
+          <SkillsCard light={light}  img={html} stars={5} half={false} />
+          <SkillsCard light={light}  img={css} stars={5} half={false} />
+          <SkillsCard light={light}  img={ts} stars={4} half={false} />
           <SkillsCard
-            img={react_native}
-            name="ExpressJS"
+            img={light ? react_native: react_native_dark}
             stars={3}
             half={false}
+            light={light} 
           />
-          <SkillsCard img={php} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={bootstrap} name="ExpressJS" stars={5} half={false} />
+          <SkillsCard light={light}  img={php} stars={3} half={true} />
+          <SkillsCard light={light}  img={bootstrap} stars={5} half={false} />
 
-          <SkillsCard img={redux} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={sass} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={mysql} name="ExpressJS" stars={4} half={true} />
-          <SkillsCard img={git} name="ExpressJS" stars={4} half={true} />
-          <SkillsCard img={selenium} name="ExpressJS" stars={4} half={false} />
-          <SkillsCard img={flutter} name="ExpressJS" stars={2} half={true} />
-          <SkillsCard img={matlab} name="ExpressJS" stars={3} half={false} />
-          <SkillsCard img={canva} name="ExpressJS" stars={3} half={true} />
-          <SkillsCard img={figma} name="ExpressJS" stars={2} half={true} />
+          <SkillsCard light={light}  img={redux} stars={3} half={true} />
+          <SkillsCard light={light}  img={sass} stars={3} half={false} />
+          <SkillsCard light={light}  img={mysql} stars={4} half={true} />
+          <SkillsCard light={light}  img={git} stars={4} half={true} />
+          <SkillsCard light={light}  img={selenium} stars={4} half={false} />
+          <SkillsCard light={light}  img={flutter} stars={2} half={true} />
+          <SkillsCard light={light}  img={matlab} stars={3} half={false} />
+          <SkillsCard light={light}  img={canva} stars={3} half={true} />
+          <SkillsCard light={light}  img={figma} stars={2} half={true} />
         </div>
       </div>
     </>

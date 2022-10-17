@@ -1,11 +1,13 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
+import logo_light from "../../Assets/logo_light.png";
+
 import { BsSunFill, BsFillMoonFill } from "react-icons/bs";
 export default function Header(props) {
   return (
     <div className="header_box" id={props.light ? "lightid" : null}>
-      <img src={logo} className="header_logo" />
+      <img src={props.light ? logo_light : logo} className="header_logo" />
       <div className="header_links">
         <a className="header_link" href={"/"}>
           Home
