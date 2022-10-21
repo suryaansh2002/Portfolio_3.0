@@ -93,7 +93,7 @@ export default function SkillsPage(props) {
           enable: false,
           area: 600,
         },
-        value: 100,
+        value: 50,
       },
       opacity: {
         value: 0.25,
@@ -136,7 +136,7 @@ export default function SkillsPage(props) {
           enable: false,
           area: 0,
         },
-        value: 50,
+        value: 30,
       },
       opacity: {
         value: 0.25,
@@ -216,42 +216,78 @@ export default function SkillsPage(props) {
           worked on during this time.
         </div>
         <div className="skillsPage_cards">
-          <SkillsCard light={light}  img={c} name="C" stars={4} half={true} />
-          <SkillsCard light={light}  img={cpp} name="C++" stars={4} half={false} />
-          <SkillsCard light={light}  img={python} name="Python" stars={4} half={true} />
-          <SkillsCard light={light}  img={java} name="Java" stars={3} half={true} />
-          <SkillsCard light={light}  img={js} name="JavaScript" stars={5} half={false} />
-          <SkillsCard light={light}  img={react} name="React JS" stars={4} half={true} />
-          <SkillsCard light={light}  img={mongo} name="MongoDB" stars={4} half={false} />
-          <SkillsCard light={light}  img={express} stars={4} half={false} />
-          <SkillsCard light={light}  img={node} stars={4} half={false} />
-
-          <SkillsCard light={light}  img={firebase} stars={3} half={false} />
-          <SkillsCard light={light}  img={appium} stars={3} half={true} />
-          <SkillsCard light={light}  img={docker} stars={3} half={false} />
-          <SkillsCard light={light}  img={aws} stars={3} half={false} />
-          <SkillsCard light={light}  img={django} stars={3} half={true} />
-          <SkillsCard light={light}  img={html} stars={5} half={false} />
-          <SkillsCard light={light}  img={css} stars={5} half={false} />
-          <SkillsCard light={light}  img={ts} stars={4} half={false} />
+          <SkillsCard light={light} img={c} name="C" stars={4} half={true} />
           <SkillsCard
-            img={light ? react_native: react_native_dark}
+            light={light}
+            img={cpp}
+            name="C++"
+            stars={4}
+            half={false}
+          />
+          <SkillsCard
+            light={light}
+            img={python}
+            name="Python"
+            stars={4}
+            half={true}
+          />
+          <SkillsCard
+            light={light}
+            img={java}
+            name="Java"
+            stars={3}
+            half={true}
+          />
+          <SkillsCard
+            light={light}
+            img={js}
+            name="JavaScript"
+            stars={5}
+            half={false}
+          />
+          <SkillsCard
+            light={light}
+            img={react}
+            name="React JS"
+            stars={4}
+            half={true}
+          />
+          <SkillsCard
+            light={light}
+            img={mongo}
+            name="MongoDB"
+            stars={4}
+            half={false}
+          />
+          <SkillsCard light={light} img={express} stars={4} half={false} />
+          <SkillsCard light={light} img={node} stars={4} half={false} />
+
+          <SkillsCard light={light} img={firebase} stars={3} half={false} />
+          <SkillsCard light={light} img={appium} stars={3} half={true} />
+          <SkillsCard light={light} img={docker} stars={3} half={false} />
+          <SkillsCard light={light} img={aws} stars={3} half={false} />
+          <SkillsCard light={light} img={django} stars={3} half={true} />
+          <SkillsCard light={light} img={html} stars={5} half={false} />
+          <SkillsCard light={light} img={css} stars={5} half={false} />
+          <SkillsCard light={light} img={ts} stars={4} half={false} />
+          <SkillsCard
+            img={light ? react_native : react_native_dark}
             stars={3}
             half={false}
-            light={light} 
+            light={light}
           />
-          <SkillsCard light={light}  img={php} stars={3} half={true} />
-          <SkillsCard light={light}  img={bootstrap} stars={5} half={false} />
+          <SkillsCard light={light} img={php} stars={3} half={true} />
+          <SkillsCard light={light} img={bootstrap} stars={5} half={false} />
 
-          <SkillsCard light={light}  img={redux} stars={3} half={true} />
-          <SkillsCard light={light}  img={sass} stars={3} half={false} />
-          <SkillsCard light={light}  img={mysql} stars={4} half={true} />
-          <SkillsCard light={light}  img={git} stars={4} half={true} />
-          <SkillsCard light={light}  img={selenium} stars={4} half={false} />
-          <SkillsCard light={light}  img={flutter} stars={2} half={true} />
-          <SkillsCard light={light}  img={matlab} stars={3} half={false} />
-          <SkillsCard light={light}  img={canva} stars={3} half={true} />
-          <SkillsCard light={light}  img={figma} stars={2} half={true} />
+          <SkillsCard light={light} img={redux} stars={3} half={true} />
+          <SkillsCard light={light} img={sass} stars={3} half={false} />
+          <SkillsCard light={light} img={mysql} stars={4} half={true} />
+          <SkillsCard light={light} img={git} stars={4} half={true} />
+          <SkillsCard light={light} img={selenium} stars={4} half={false} />
+          <SkillsCard light={light} img={flutter} stars={2} half={true} />
+          <SkillsCard light={light} img={matlab} stars={3} half={false} />
+          <SkillsCard light={light} img={canva} stars={3} half={true} />
+          <SkillsCard light={light} img={figma} stars={2} half={true} />
         </div>
       </div>
     </>

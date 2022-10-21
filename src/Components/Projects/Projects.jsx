@@ -20,8 +20,8 @@ export default function Projects(props) {
       <div className="card_c">
         {/*Psychup */}
         <div className="mainc">
-          <div className="proj_card">
-            <img src={psychup} className="proj_img"></img>
+          <div className="proj_card" id={props.light ? "proj_card_light" : null}>
+            <img src={psychup} className="proj_img"   id={props.light ? "proj_img_light" : null}></img>
             <div className="proj_title">Psychup</div>
             <div className="proj_text">
               It is a project aims to increase knowledge and awareness regarding
@@ -48,8 +48,8 @@ export default function Projects(props) {
         {/*Datagrad */}
 
         <div className="mainc">
-          <div className="proj_card">
-            <img src={datagrad} className="proj_img"></img>
+          <div className="proj_card"  id={props.light ? "proj_card_light" : null}>
+            <img src={datagrad} className="proj_img"   id={props.light ? "proj_img_light" : null}></img>
             <div className="proj_title">DataGrad</div>
             <div className="proj_text">
               It aims to bridge the gap between top MOOCs like Coursera, and
@@ -73,8 +73,8 @@ export default function Projects(props) {
         {/*Decrypt */}
 
         <div className="mainc">
-          <div className="proj_card">
-            <img src={decrypt} className="proj_img"></img>
+          <div className="proj_card"  id={props.light ? "proj_card_light" : null}>
+            <img src={decrypt} className="proj_img"  id={props.light ? "proj_img_light" : null}></img>
             <div className="proj_title">Decrypt</div>
             <div className="proj_text">
               A website for an annual online cryptic hunt competition conducted

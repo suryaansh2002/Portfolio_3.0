@@ -11,7 +11,7 @@ export default function Contact(props) {
       <div className="contact_header" id="contact">
         Get In Touch With Me
       </div>
-      <div className="logo_C">
+      <div className="logo_C" id={props.light ? "logo_light" : null}>
         <a href="https://instagram.com/suryaansh2807" target="__blank">
           <AiOutlineInstagram className="logo" />
         </a>

@@ -17,23 +17,7 @@
 body {
   overflow-x: hidden;
 }
-div .a,
-.b,
-.c,
-.d,
-.e,
-.f,
-.g,
-.h,
-.i,
-.j,
-.k {
-  position: fixed;
-  color: white;
-  font-size: 25px;
-  font-family: "Uchen", sans-serif;
-  opacity: 0.3;
-}
+
 .landing_name {
   font-size: 90px;
   position: absolute;
@@ -76,12 +60,10 @@ div .a,
 }
 
 #lightid {
-  /* background: white !important; */
-  /* background: rgb(237,237,237);
-background: linear-gradient(125deg, rgba(237,237,237,0.7178221630449055) 22%, rgba(58,83,145,1) 99%); */
 background: rgb(237,237,237);
-/* background: linear-gradient(223deg, rgba(237,237,237,0.7178221630449055) 50%, rgba(58,83,145,1) 99%); */
 background: linear-gradient(223deg, rgba(237,237,237,0.7178221630449055) 50%, rgba(113,139,204,1) 99%);
-
-  color: black !important;
+  color: black ;
+}
+#lightid .landing_name{
+  color: rgb(7, 1, 58) !important;
 }

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "./Ridecell.css";
 import { loadFull } from "tsparticles";
 import ridecell from "../../Assets/Work/ridecell.png";
@@ -106,7 +106,11 @@ export default function Ridecell() {
       },
     };
   }
-
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "true") {
+      setLight(true);
+    }
+  }, []);
   return (
     <div className="workex_main" id={light ? "lightid" : null}>
       <Header light={light} setLight={setLight} />
@@ -175,10 +179,10 @@ export default function Ridecell() {
       <div className="rc1">
         <div className="rc1_left">
           <div className="work_img_box">
-            <div className="img_container">
-              <img src={ridecell} className="ridecell_logo" />
+            <div className="img_container" id={light ? "img_container_light": null}>
+              <img src={ridecell} className="ridecell_logo"  />
             </div>
-            <div className="img_cont_bg"></div>
+            <div className="img_cont_bg" id={light ? "img_cont_bg_light": null}></div>
           </div>
         </div>
         <div className="rc1_right">

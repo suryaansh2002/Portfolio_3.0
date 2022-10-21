@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "./ProjectsPage.css";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
@@ -120,6 +120,11 @@ export default function ProjectsPage() {
       },
     };
   }
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "true") {
+      setLight(true);
+    }
+  }, []);
 
   return (
     <>
@@ -186,8 +191,8 @@ export default function ProjectsPage() {
         <div className="card_c">
           {/*Psychup */}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={psychup} className="proj_img"></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img src={psychup} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Psychup</div>
               <div className="proj_text">
                 It is a project aims to increase knowledge and awareness
@@ -214,8 +219,8 @@ export default function ProjectsPage() {
           {/*Datagrad */}
 
           <div className="mainc">
-            <div className="proj_card">
-              <img src={datagrad} className="proj_img"></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img src={datagrad} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">DataGrad</div>
               <div className="proj_text">
                 It aims to bridge the gap between top MOOCs like Coursera, and
@@ -239,8 +244,8 @@ export default function ProjectsPage() {
           {/*Decrypt */}
 
           <div className="mainc">
-            <div className="proj_card">
-              <img src={decrypt} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={decrypt} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Decrypt</div>
               <div className="proj_text">
                 A website for an annual online cryptic hunt competition
@@ -263,8 +268,8 @@ export default function ProjectsPage() {
 
           {/*Atlantis */}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={atlantis} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={atlantis} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Atlantis</div>
               <div className="proj_text">
                 A website built using React JS, for IEEE SBM's annual TechWeek
@@ -282,8 +287,8 @@ export default function ProjectsPage() {
 
           {/*Ecommerce */}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={ecommerce} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={ecommerce} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Ecommerce website</div>
               <div className="proj_text">
                 A basic Ecommerce website built using MongoDB, Express, React
@@ -309,8 +314,8 @@ export default function ProjectsPage() {
 
           {/*Chattify */}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={chattify} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={chattify} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Chattify</div>
               <div className="proj_text">
                 A real time chat Application built using React JS, Firebase for
@@ -334,8 +339,8 @@ export default function ProjectsPage() {
 
           {/*Discussion Rooms */}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={discussion} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={discussion} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">Discussion Rooms</div>
               <div className="proj_text">
                 A discussion rooms application, built with HTML-CSS Frontend and
@@ -361,8 +366,8 @@ export default function ProjectsPage() {
 
           {/*To Do*/}
           <div className="mainc">
-            <div className="proj_card">
-              <img src={todo} className="proj_img"></img>
+            <div className="proj_card"  id={light ? "proj_card_light" : null}>
+              <img src={todo} className="proj_img"  id={light ? "proj_img_light" : null}></img>
               <div className="proj_title">To Do App</div>
               <div className="proj_text">
                 A responsive Todo Web Application built using MERN Stack and

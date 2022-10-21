@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "../Ridecell/Ridecell.css";
 import { loadFull } from "tsparticles";
 import { AiFillCalendar, AiOutlineLink } from "react-icons/ai";
@@ -107,7 +107,11 @@ export default function Apt() {
       },
     };
   }
-
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "true") {
+      setLight(true);
+    }
+  }, []);
   return (
     <div>
       <div className="workex_main" id={light ? "lightid" : null}>
@@ -177,10 +181,10 @@ export default function Apt() {
         <div className="rc1">
           <div className="rc1_left">
             <div className="work_img_box">
-              <div className="img_container">
+            <div className="img_container" id={light ? "img_container_light": null}>
                 <img src={apt} className="ridecell_logo" id="apt_logo" />
               </div>
-              <div className="img_cont_bg"></div>
+              <div className="img_cont_bg" id={light ? "img_cont_bg_light": null}></div>
             </div>
             '
           </div>

@@ -30,20 +30,24 @@
   padding: 0.5rem;
   border: 2.5px solid rgba(32, 70, 222, 0.5);
 }
+#proj_img_light{
+  border: 2.5px solid rgba(0, 23, 106, 0.5) !important;
+
+}
 .proj_title {
-  color: white;
   font-family: "Cinzel", serif;
   font-size: 1.5rem;
   font-family: 900;
   margin-top: 1rem;
+
 }
 .proj_text {
-  color: white;
   margin-top: 1rem;
   font-family: "Roboto";
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.6rem;
+
 }
 .proj_card {
   width: 20rem;
@@ -53,7 +57,17 @@
   box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
   padding-top: 2rem;
   position: relative;
+  color:  white ; 
   z-index: 100;
+}
+
+#proj_card_light {
+  background-color: rgb(210, 228, 243) !important;
+  color: black !important;
+}
+#proj_card_light *{
+  color: black !important;
+
 }
 .inner_card {
   width: 19.25rem;
@@ -75,9 +89,9 @@
 }
 
 .picon {
-  color: white;
   font-size: 2rem;
   margin: auto;
+
 }
 .icons_c {
   display: flex;

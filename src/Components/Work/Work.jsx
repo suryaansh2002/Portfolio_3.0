@@ -24,7 +24,7 @@ export default function Work(props) {
             className="card_bg1"
             id={props.light ? "card_bg1_light" : null}
           ></div>
-          <div className="dur">
+          <div className="dur"  id={props.light ? "dur_light" : null}>
             <AiFillCalendar className="calender" />
             May '22 - Aug '22
           </div>
@@ -49,7 +49,7 @@ export default function Work(props) {
             className="card_bg1"
             id={props.light ? "card_bg1_light" : null}
           ></div>
-          <div className="dur">
+          <div className="dur" id={props.light ? "dur_light" : null}>
             <AiFillCalendar className="calender" />
             Apr '22 - Jul '22
           </div>
@@ -73,7 +73,7 @@ export default function Work(props) {
             className="card_bg1"
             id={props.light ? "card_bg1_light" : null}
           ></div>
-          <div className="dur">
+          <div className="dur" id={props.light ? "dur_light" : null}>
             <AiFillCalendar className="calender" />
             Sept '21 - Jan '22
           </div>

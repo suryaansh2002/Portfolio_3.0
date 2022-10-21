@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "./Santanet.css";
 import { loadFull } from "tsparticles";
 import santanet from "../../Assets/Work/santanet.png";
@@ -106,7 +106,11 @@ export default function Santanet() {
       },
     };
   }
-
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "true") {
+      setLight(true);
+    }
+  }, []);
   return (
     <div>
       <div className="workex_main" id={light ? "lightid" : null}>
@@ -176,14 +180,14 @@ export default function Santanet() {
         <div className="rc1">
           <div className="rc1_left">
             <div className="work_img_box">
-              <div className="img_container">
+            <div className="img_container" id={light ? "img_container_light": null}>
                 <img
                   src={santanet}
-                  className="ridecell_logo"
-                  id="santanent_logo"
+                  className="ridecell_logo santanent_logo"
+                  id={light ? "img_cont_bg_light": null}
                 />
               </div>
-              <div className="img_cont_bg"></div>
+              <div className="img_cont_bg" id={light ? "img_cont_bg_light": null}></div>
             </div>
           </div>
           <div className="rc1_right">

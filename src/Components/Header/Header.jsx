@@ -18,10 +18,10 @@ export default function Header(props) {
         <a className="header_link" href={"/#skills"}>
           Skills
         </a>
-        <a className="header_link" href={"/#projects"}>
+        <a className="header_link" href={"../#projects"}>
           Projects
         </a>
-        <a className="header_link" href={"/#workex"}>
+        <a className="header_link" href={"#workex"}>
           Work Experience
         </a>
         <a className="header_link" id="last_link" href={"/#contact"}>

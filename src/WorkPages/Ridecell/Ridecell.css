@@ -73,7 +73,16 @@
   position: relative;
   z-index: 100;
 }
+#img_container_light{
+  background-color: rgb(203, 209, 223) !important;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.6);
+  color: black !important;
 
+}
+#img_cont_bg_light{
+  border: 2px solid rgba(0, 0, 0, 0.4);
+
+}
 .img_cont_bg {
   width: 100%;
   height: 100%;
@@ -144,6 +153,12 @@
   box-shadow: 5px 3px 3px 2px rgb(255, 255, 255);
 }
 
+#lightid .work_skill{
+  color: white;
+  background-color: rgba(8, 0, 44, 0.92);
+  box-shadow: 2px 4px 2px rgba(0, 6, 67, 0.788);
+}
+
 .rc1 {
   height: fit-content;
   height: max-content;
@@ -158,7 +173,10 @@
   font-family: "Cinzel";
   font-size: 1rem;
 }
-
+#lightid .website_link{
+  color: white;
+  background-color: rgba(8, 0, 44, 0.92);
+}
 .link_icon {
   font-size: 1.25rem;
   margin-right: 0.6rem;

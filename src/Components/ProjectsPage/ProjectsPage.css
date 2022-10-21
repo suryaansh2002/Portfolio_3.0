@@ -119,3 +119,14 @@
 .morep a {
   color: white;
 }
+
+#proj_card_light {
+  background-color: rgb(210, 228, 243) !important;
+  color: black !important;
+}
+#proj_card_light * {
+  color: black !important;
+}
+#proj_img_light {
+  border: 2.5px solid rgba(0, 23, 106, 0.5) !important;
+}

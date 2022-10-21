@@ -85,3 +85,7 @@
     margin-left: 0;
   }
 }
+
+#logo_light *{
+  color: rgb(3, 0, 44) !important;
+}
