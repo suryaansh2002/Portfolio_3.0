@@ -2,31 +2,34 @@ import React from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
 import logo_light from "../../Assets/logo_light.png";
-
+import { HashLink } from "react-router-hash-link";
 import { BsSunFill, BsFillMoonFill } from "react-icons/bs";
 export default function Header(props) {
   return (
     <div className="header_box" id={props.light ? "lightid" : null}>
-      <img src={props.light ? logo_light : logo} className="header_logo" />
+    <HashLink smooth to={"/"} >
+    <img  src={props.light ? logo_light : logo} className="header_logo" />
+
+    </HashLink>
       <div className="header_links">
-        <a className="header_link" href={"/"}>
+        <HashLink smooth className="header_link" to={"/"}>
           Home
-        </a>
-        <a className="header_link" href={"/#about"}>
+        </HashLink>
+        <HashLink smooth className="header_link" to={"/#about"}>
           About
-        </a>
-        <a className="header_link" href={"/#skills"}>
+        </HashLink>
+        <HashLink smooth className="header_link" to={"/#skills"}>
           Skills
-        </a>
-        <a className="header_link" href={"../#projects"}>
+        </HashLink>
+        <HashLink smooth className="header_link" to={"/#projects"}>
           Projects
-        </a>
-        <a className="header_link" href={"#workex"}>
+        </HashLink>
+        <HashLink  smooth className="header_link" to={"/#workex"}>
           Work Experience
-        </a>
-        <a className="header_link" id="last_link" href={"/#contact"}>
+        </HashLink>
+        <HashLink smooth className="header_link" id="last_link" to={"/#contact"}>
           Contact
-        </a>
+        </HashLink>
       </div>
       <button
         className="themeBtn"
