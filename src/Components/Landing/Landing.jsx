@@ -1,6 +1,5 @@
 import React from "react";
 import "./Landing.css";
-import $ from "jquery";
 import main from "../../Assets/main.png";
 import main_light from "../../Assets/main_light.png";
 
@@ -31,7 +30,6 @@ export default function Landing(props) {
           }}
         />
       </div>
-      <button className="btn_nav about_link">DOWN</button>
     </div>
   );
 }

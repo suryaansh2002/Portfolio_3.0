@@ -1,5 +1,5 @@
 .about_main {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(0, 2, 49);
   background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
   color: white;
@@ -151,6 +151,17 @@
     padding-top: 0.1rem;
     border-radius: 50px;
   }
+
+  #download_light {
+    margin-top: 1.5rem;
+    margin-left: 30%;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+    padding: 0.5rem 1rem;
+    padding-top: 0.1rem;
+    border-radius: 50px;
+  }
+  
 
   .d_icon {
     margin-left: 0.25rem;

@@ -47,7 +47,7 @@ export default function Skills(props) {
 
   var settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     lazyLoad: true,
@@ -59,7 +59,7 @@ export default function Skills(props) {
   };
   var settings2 = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     lazyLoad: true,
@@ -71,7 +71,7 @@ export default function Skills(props) {
   };
   var settings3 = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     lazyLoad: true,
