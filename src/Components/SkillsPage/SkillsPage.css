@@ -50,4 +50,8 @@
     font-size: 1rem;
     margin-left: 5vw;
   }
+  .skillsPage_cards .skills_card{
+    margin-bottom: 2rem !important;
+    height: 17rem !important;
+  }
 }

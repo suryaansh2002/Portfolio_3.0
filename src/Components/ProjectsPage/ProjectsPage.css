@@ -2,6 +2,7 @@
   background: rgb(0, 2, 49);
   background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
   color: white;
+  overflow-x: hidden;
 }
 
 .projectsPage_header {
