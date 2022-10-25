@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import me from "../../Assets/me.png";
+import me2 from "../../Assets/me2.png";
 import { MdSimCardDownload } from "react-icons/md";
 import resume from "../../Assets/SuryaanshRathinam_Resume.pdf";
 export default function About(props) {
@@ -19,7 +20,7 @@ export default function About(props) {
           <span className="letter">? </span>
         </div>
         <div className="left">
-          <img src={me} className="me" id={props.light?'light_me':null} />
+          <img src={props.light ? me2 : me} className="me" id={props.light?'light_me':null} />
           <div className="leftBg" id={props.light ? 'light_imgBg':null}></div>
         </div>
         <div className="about_txt">
