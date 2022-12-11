@@ -380,7 +380,7 @@ export default function ProjectsPage() {
                 >
                   <AiFillGithub className="picon" />
                 </a>
-                <a target="__blank" href="https://todo.suryaanshrathinam.com/">
+                <a target="__blank" href="https://to-do-app-suryaansh.netlify.app/">
                   <HiGlobeAlt className="picon" />{" "}
                 </a>
               </div>
