@@ -1,0 +1,125 @@
+.research_left,
+.research_right {
+  display: inline-block;
+  width: 47.5vw;
+  vertical-align: text-top;
+}
+
+.research_left {
+  padding: 2rem;
+}
+.research_left div {
+  font-family: "Cinzel", serif;
+
+  font-size: 1.25rem;
+  margin: 2rem 0rem;
+  font-weight: 600;
+}
+
+.research_left div span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.download_r {
+  margin-top: 4rem;
+  margin-left: 30%;
+  font-size: 1.3rem;
+  background-color: white;
+  font-family: "Roboto";
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+#download_r_light {
+  margin-top: 4rem;
+  margin-left: 30%;
+  font-size: 1.4rem;
+  background-color: rgba(8, 0, 44, 0.92);
+  color: white;
+  box-shadow: 2px 4px 4px gray;
+  border: none;
+  font-family: "Roboto";
+  border-radius: 50px;
+}
+
+.research_abs {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.abs_content {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Roboto";
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .research_left,
+  .research_right {
+    width: 90vw;
+    margin-left: 5vw;
+    display: block;
+  }
+  .research_left {
+    padding: 0.75rem;
+  }
+  .research_left div {
+    font-family: "Cinzel", serif;
+    font-size: 0.9rem;
+    margin: 1rem 0rem;
+    font-weight: 600;
+  }
+
+  .research_left div span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .download_r {
+    margin-top: 1.5rem;
+    margin-left: 30%;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+    padding: .5rem 1rem;
+    border-radius: 50px;
+  }
+
+  #download_r_light {
+    margin-top: 1.5rem;
+    margin-left: 30%;
+    font-size: 1.1rem;
+    font-family: "Roboto";
+    padding: 0.5rem 1rem;
+    padding-top: 0.1rem;
+    border-radius: 50px;
+  }
+
+.research_abs {
+font-size: 1.25rem;
+}
+.abs_content {
+  margin-top: .75rem;
+  text-align: center;
+  font-size: 1.1rem;
+  /* line-height: 1.25rem; */
+  width: 95%;
+  margin-left: 2.5%;
+  font-family: "Roboto";
+}
+.research_right{
+  padding-bottom: 4rem;
+}
+}
