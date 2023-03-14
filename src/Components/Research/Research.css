@@ -1,125 +1,120 @@
-.research_left,
-.research_right {
-  display: inline-block;
-  width: 47.5vw;
-  vertical-align: text-top;
-}
-
-.research_left {
-  padding: 2rem;
-}
-.research_left div {
-  font-family: "Cinzel", serif;
-
-  font-size: 1.25rem;
-  margin: 2rem 0rem;
-  font-weight: 600;
-}
-
-.research_left div span {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 .download_r {
-  margin-top: 4rem;
-  margin-left: 30%;
   font-size: 1.3rem;
-  background-color: white;
+  background-color: rgb(253, 253, 253, 0.8);
   font-family: "Roboto";
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border-radius: 50px;
+  border: none;
+  margin-top: 1.5rem;
+  transition: 0.5s;
+}
+.download_r:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 #download_r_light {
-  margin-top: 4rem;
-  margin-left: 30%;
-  font-size: 1.4rem;
   background-color: rgba(8, 0, 44, 0.92);
   color: white;
   box-shadow: 2px 4px 4px gray;
-  border: none;
-  font-family: "Roboto";
-  border-radius: 50px;
-}
-
-.research_abs {
-  text-align: center;
-  font-family: "Cinzel", serif;
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-decoration: underline;
-}
-
-.abs_content {
-  margin-top: 1.5rem;
-  text-align: center;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  width: 80%;
-  margin-left: 10%;
-  font-family: "Roboto";
 }
 
 a {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+.research-card {
+  position: relative;
+  width: 50vw;
+  margin: 5rem auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: rgba(8, 0, 44, 0.92);
+  padding-bottom: 1.5rem;
+}
 
-  .research_left,
-  .research_right {
-    width: 90vw;
-    margin-left: 5vw;
+.r-card-border {
+  width: 51vw;
+  height: 45vh;
+  transform: translate(4%, -3%);
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+.research-title {
+  font-size: 1.65rem;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+}
+
+.research-author {
+  font-size: 1.25rem;
+  font-family: "Roboto", serif;
+  margin: 1rem;
+  font-style: italic;
+}
+
+.research-published {
+  font-size: 1.25rem;
+  font-family: "Roboto", serif;
+  margin: 1rem;
+}
+
+.research-presented {
+  font-size: 1.25rem;
+  font-family: "Roboto", serif;
+  margin: 1rem;
+}
+.research-presented a,
+.research-published a {
+  color: rgba(8, 0, 44, 0.92);
+  font-style: italic;
+}
+
+#research {
+  margin-bottom: 6rem;
+}
+.research-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.research-icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .download_r {
+    margin-top: 0;
+    font-size: 0.9rem !important;
+    font-family: "Roboto";
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+  }
+
+  .research-card {
+    position: relative;
+    width: 80vw;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: rgba(8, 0, 44, 0.92);
+    padding-bottom: 1rem;
+  }
+
+  .research-title{
+    font-size: 1.1rem;
+  }
+  .research-author, .research-presented,.research-published{
+    font-size: 0.9rem;
+  }
+  .research-flex{
     display: block;
   }
-  .research_left {
-    padding: 0.75rem;
-  }
-  .research_left div {
-    font-family: "Cinzel", serif;
-    font-size: 0.9rem;
-    margin: 1rem 0rem;
-    font-weight: 600;
-  }
-
-  .research_left div span {
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .download_r {
-    margin-top: 1.5rem;
-    margin-left: 30%;
-    font-size: 1.1rem;
-    font-family: "Roboto";
-    padding: .5rem 1rem;
-    border-radius: 50px;
-  }
-
-  #download_r_light {
-    margin-top: 1.5rem;
-    margin-left: 30%;
-    font-size: 1.1rem;
-    font-family: "Roboto";
-    padding: 0.5rem 1rem;
-    padding-top: 0.1rem;
-    border-radius: 50px;
-  }
-
-.research_abs {
-font-size: 1.25rem;
-}
-.abs_content {
-  margin-top: .75rem;
-  text-align: center;
-  font-size: 1.1rem;
-  /* line-height: 1.25rem; */
-  width: 95%;
-  margin-left: 2.5%;
-  font-family: "Roboto";
-}
-.research_right{
-  padding-bottom: 4rem;
-}
 }

@@ -4,6 +4,7 @@
   min-height: 100vh;
   color: white;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .work_header {
   font-weight: 600;
@@ -53,6 +54,11 @@
 }
 
 #santanet {
+  transform: translateY(10%);
+  height: 10rem;
+}
+
+#pefo {
   transform: translateY(10%);
   height: 10rem;
 }
@@ -157,6 +163,11 @@
   }
 
   #santanet {
+    transform: translateY(10%);
+    height: 25vw;
+  }
+
+  #pefo {
     transform: translateY(10%);
     height: 25vw;
   }
