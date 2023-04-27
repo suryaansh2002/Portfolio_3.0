@@ -39,6 +39,12 @@ import flutter from "../../Assets/Skills/flutter.png";
 import canva from "../../Assets/Skills/canva.png";
 import figma from "../../Assets/Skills/figma.png";
 import node from "../../Assets/Skills/node.png";
+import fastapi from "../../Assets/Skills/fastapi.png";
+import next from "../../Assets/Skills/next.png";
+import typeorm from "../../Assets/Skills/typeorm.png";
+import nest from "../../Assets/Skills/nest.png";
+import postgres from "../../Assets/Skills/postgres.png";
+
 import Header from "../Header/Header";
 
 export default function SkillsPage(props) {
@@ -261,9 +267,13 @@ export default function SkillsPage(props) {
           />
           <SkillsCard light={light} img={express} stars={4} half={false} />
           <SkillsCard light={light} img={node} stars={4} half={false} />
-
-          <SkillsCard light={light} img={firebase} stars={3} half={false} />
+          <SkillsCard light={light} img={fastapi} stars={3} half={false} />
+          <SkillsCard light={light} img={next} stars={4} half={false} />
+          <SkillsCard light={light} img={typeorm} stars={3} half={false} />
+          <SkillsCard light={light} img={nest} stars={3} half={false} />
+          <SkillsCard light={light} img={firebase} stars={3} half={true} />
           <SkillsCard light={light} img={appium} stars={3} half={true} />
+          <SkillsCard light={light} img={postgres} stars={3} half={false} />
           <SkillsCard light={light} img={docker} stars={3} half={false} />
           <SkillsCard light={light} img={aws} stars={3} half={false} />
           <SkillsCard light={light} img={django} stars={3} half={true} />
@@ -278,11 +288,10 @@ export default function SkillsPage(props) {
           />
           <SkillsCard light={light} img={php} stars={3} half={true} />
           <SkillsCard light={light} img={bootstrap} stars={5} half={false} />
-
           <SkillsCard light={light} img={redux} stars={3} half={true} />
-          <SkillsCard light={light} img={sass} stars={3} half={false} />
+          <SkillsCard light={light} img={sass} stars={4} half={false} />
           <SkillsCard light={light} img={mysql} stars={4} half={true} />
-          <SkillsCard light={light} img={git} stars={4} half={true} />
+          <SkillsCard light={light} img={git} stars={5} half={false} />
           <SkillsCard light={light} img={selenium} stars={4} half={false} />
           <SkillsCard light={light} img={flutter} stars={2} half={true} />
           <SkillsCard light={light} img={matlab} stars={3} half={false} />
