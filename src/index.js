@@ -11,6 +11,7 @@ import Ridecell from "./WorkPages/Ridecell/Ridecell";
 import Apt from "./WorkPages/APT/Apt";
 import Santanet from "./WorkPages/Santanet/Santanet";
 import Pefo from "./WorkPages/PEFO/Pefo";
+import Moneyflo from "./WorkPages/Moneyflo/Moneyflo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,8 @@ root.render(
       <Route path="apt" element={<Apt />} />
       <Route path="santanet" element={<Santanet />} />
       <Route path="pefo" element={<Pefo />} />
+      <Route path="moneyflo" element={<Moneyflo />} />
+
 
       {/* <Route path="teams" element={<Teams />}>
           <Route path=":teamId" element={<Team />} />

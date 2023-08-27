@@ -63,6 +63,11 @@
   height: 10rem;
 }
 
+#moneyflo {
+  transform: translateY(-5%);
+  height: 13rem;
+}
+
 .card_bg1 {
   width: 26.5rem;
   height: 14.75rem;

@@ -258,9 +258,6 @@ export default function ProjectsPage() {
                 >
                   <AiFillGithub className="picon" />
                 </a>
-                <a target="__blank" href="https://d3crypt.ieeemanipal.com/">
-                  <HiGlobeAlt className="picon" />
-                </a>
               </div>
             </div>
             <div className="inner_card"></div>

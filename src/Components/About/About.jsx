@@ -20,18 +20,25 @@ export default function About(props) {
           <span className="letter">? </span>
         </div>
         <div className="left">
-          <img src={props.light ? me2 : me} className="me" id={props.light?'light_me':null} />
-          <div className="leftBg" id={props.light ? 'light_imgBg':null}></div>
+          <img
+            src={props.light ? me2 : me}
+            className="me"
+            id={props.light ? "light_me" : null}
+          />
+          <div className="leftBg" id={props.light ? "light_imgBg" : null}></div>
         </div>
         <div className="about_txt">
-          I am Suryaansh Rathinam, a Computer Science Undergrad at Manipal
-          Institue of Technology.
-          <br /> Being a Full Stack Developer with experience working with a
-          variety of techstacks, tools and frameworks, on a variety of projects,
-          I am always on the lookout to explore more, learn more and develop my
-          skill set.
-          <br /> Do feel free to reach out to me if you feel you've got
-          something that would interest me or if I can be of any help to you.
+          Hello, I'm Suryaansh Rathinam, a final-year Computer Science student
+          at Manipal Institute of Technology. Proficient as a Full Stack
+          Developer, I've embraced various tech stacks, tools, and frameworks
+          through diverse projects, fostering an unceasing desire for learning
+          and growth.
+          <br />
+          My journey extends beyond development; I've immersed myself in AI and
+          deep learning research, translating concepts into practical
+          applications. If you're pursuing endeavors aligned with my interests
+          or need a helping hand, feel free to connect. Let's join forces to
+          explore new and exciting possibilities. <br />
           <br />
           <a href={resume} download>
             <button

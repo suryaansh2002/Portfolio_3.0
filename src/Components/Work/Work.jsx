@@ -4,6 +4,7 @@ import ridecell from "../../Assets/Work/ridecell.png";
 import apt from "../../Assets/Work/apt2.png";
 import santanet from "../../Assets/Work/santanet.png";
 import pefo from "../../Assets/Work/pefo.png";
+import moneyflo from "../../Assets/Work/moneyflo.png";
 
 import { IoIosArrowDropright } from "react-icons/io";
 
@@ -20,6 +21,30 @@ export default function Work(props) {
             className="work_card"
             id={props.light ? "work_card_light" : null}
           >
+            <img src={moneyflo} id="moneyflo" className="work_card_img" />
+          </div>
+          <div
+            className="card_bg1"
+            id={props.light ? "card_bg1_light" : null}
+          ></div>
+          <div className="dur" id={props.light ? "dur_light" : null}>
+            <AiFillCalendar className="calender" />
+            Mar '23 - Present
+          </div>
+          <a href="/moneyflo">
+            <div
+              className="r_more_w"
+              id={props.light ? "r_more_w_light" : null}
+            >
+              Read More <IoIosArrowDropright className="right_w" />
+            </div>
+          </a>
+        </div>
+        <div className="card_cont">
+          <div
+            className="work_card"
+            id={props.light ? "work_card_light" : null}
+          >
             <img src={ridecell} id="ridecell" className="work_card_img" />
           </div>
           <div
@@ -31,6 +56,32 @@ export default function Work(props) {
             May '22 - Aug '22
           </div>
           <a href="/ridecell">
+            <div
+              className="r_more_w"
+              id={props.light ? "r_more_w_light" : null}
+            >
+              Read More <IoIosArrowDropright className="right_w" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div className="work_card_container">
+      <div className="card_cont">
+          <div
+            className="work_card"
+            id={props.light ? "work_card_light" : null}
+          >
+            <img src={pefo} id="pefo" className="work_card_img" />
+          </div>
+          <div
+            className="card_bg1"
+            id={props.light ? "card_bg1_light" : null}
+          ></div>
+          <div className="dur" id={props.light ? "dur_light" : null}>
+            <AiFillCalendar className="calender" />
+            Dec '22 - Jan '23
+          </div>
+          <a href="/pefo">
             <div
               className="r_more_w"
               id={props.light ? "r_more_w_light" : null}
@@ -66,7 +117,7 @@ export default function Work(props) {
         </div>
       </div>
       <div className="work_card_container">
-        <div className="card_cont">
+      <div className="card_cont">
           <div
             className="work_card"
             id={props.light ? "work_card_light" : null}
@@ -89,32 +140,7 @@ export default function Work(props) {
               Read More <IoIosArrowDropright className="right_w" />
             </div>
           </a>
-        </div>
-
-        <div className="card_cont">
-          <div
-            className="work_card"
-            id={props.light ? "work_card_light" : null}
-          >
-            <img src={pefo} id="pefo" className="work_card_img" />
-          </div>
-          <div
-            className="card_bg1"
-            id={props.light ? "card_bg1_light" : null}
-          ></div>
-          <div className="dur" id={props.light ? "dur_light" : null}>
-            <AiFillCalendar className="calender" />
-            Dec '22 - Jan '23
-          </div>
-          <a href="/pefo">
-            <div
-              className="r_more_w"
-              id={props.light ? "r_more_w_light" : null}
-            >
-              Read More <IoIosArrowDropright className="right_w" />
-            </div>
-          </a>
-        </div>
+        </div>   
       </div>
     </div>
   );

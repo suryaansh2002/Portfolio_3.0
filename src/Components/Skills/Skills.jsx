@@ -155,11 +155,11 @@ export default function Skills(props) {
           <SkillsCard light={light} img={node} stars={4} half={false} />
           <SkillsCard light={light} img={fastapi} stars={3} half={false} />
           <SkillsCard light={light} img={next} stars={4} half={false} />
-          <SkillsCard light={light} img={typeorm} stars={3} half={false} />
-          <SkillsCard light={light} img={nest} stars={3} half={false} />
+          <SkillsCard light={light} img={typeorm} stars={3} half={true} />
+          <SkillsCard light={light} img={nest} stars={3} half={true} />
           <SkillsCard light={light} img={firebase} stars={3} half={true} />
           <SkillsCard light={light} img={appium} stars={3} half={true} />
-          <SkillsCard light={light} img={postgres} stars={3} half={false} />
+          <SkillsCard light={light} img={postgres} stars={3} half={true} />
           <SkillsCard light={light} img={docker} stars={3} half={false} />
           <SkillsCard light={light} img={aws} stars={3} half={false} />
           <SkillsCard light={light} img={django} stars={3} half={true} />
