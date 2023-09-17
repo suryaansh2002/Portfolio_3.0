@@ -2,6 +2,7 @@ import React from "react";
 import "./Research.css";
 import paper from "../../Assets/SuryaanshRathinam_ComparisonOfFrontendFrameworks.pdf";
 import paper2 from "../../Assets/Review_Paper.pdf";
+import paper3 from "../../Assets/KGP_Certificate.pdf";
 
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdPresentToAll } from "react-icons/md";
@@ -13,6 +14,28 @@ export default function Research(props) {
         Research Work
       </div>
       <div>
+        <div className="research-card">
+          {/* <div className="r-card-border"></div> */}
+          <div className="research-title">
+            Image Segmentation and Analysis of Ultrasound of Mouse Kidney using
+            CNN
+          </div>
+          <div className="research-author">
+            - Medical Imaging and Theragnostic Lab, IIT Kharagpur
+          </div>
+          <div className="research-presented">Jun - Aug 2023</div>
+
+          <div>
+            <a href={paper3} download>
+              <button
+                className="download_r"
+                id={props.light ? "download_r_light" : null}
+              >
+                <FaFileDownload className="download-icon" /> Certificate
+              </button>
+            </a>
+          </div>
+        </div>
         <div className="research-card">
           {/* <div className="r-card-border"></div> */}
           <div className="research-title">
