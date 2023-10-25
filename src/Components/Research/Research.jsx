@@ -44,16 +44,13 @@ export default function Research(props) {
           <div className="research-author">- Suryaansh Rathinam</div>
           <div className="research-flex">
             <div className="research-presented">
-              {/* <div>
-          <MdPresentToAll className="research-icon"/>
-          </div> */}
+              
               Presented at:{" "}
               <a href="https://atis2022.com/" target={"_blank"}>
                 ATIS 2022 Conference
               </a>
             </div>
             <div className="research-published">
-              {/* <div><GiArchiveResearch className="research-icon"/></div> */}
               Published in{" "}
               <a
                 href="https://link.springer.com/chapter/10.1007/978-981-99-2264-2_19"
@@ -93,12 +90,12 @@ export default function Research(props) {
               </a>
             </div>
             <div className="research-published">
-              To be published by:{" "}
+             Published In: {" "}
               <a
-                href="https://iopscience.iop.org/journal/1742-6596"
+                href="https://iopscience.iop.org/article/10.1088/1742-6596/2571/1/012022"
                 target={"_blank"}
               >
-                IOP: Journal of Physics
+                IOP: Journal of Physics (Volume 2751)
               </a>
             </div>
           </div>

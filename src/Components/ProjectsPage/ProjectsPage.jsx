@@ -12,6 +12,7 @@ import ecommerce from "../../Assets/Skills/ecommerce.png";
 import chattify from "../../Assets/Skills/chattify.png";
 import discussion from "../../Assets/Skills/discussion.png";
 import todo from "../../Assets/Skills/todo.png";
+import mahe from "../../Assets/mahe.png";
 
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { HiGlobeAlt } from "react-icons/hi";
@@ -192,7 +193,11 @@ export default function ProjectsPage() {
           {/*Psychup */}
           <div className="mainc">
             <div className="proj_card" id={light ? "proj_card_light" : null}>
-              <img src={psychup} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+              <img
+                src={psychup}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Psychup</div>
               <div className="proj_text">
                 It is a project aims to increase knowledge and awareness
@@ -220,7 +225,11 @@ export default function ProjectsPage() {
 
           <div className="mainc">
             <div className="proj_card" id={light ? "proj_card_light" : null}>
-              <img src={datagrad} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+              <img
+                src={datagrad}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">DataGrad</div>
               <div className="proj_text">
                 It aims to bridge the gap between top MOOCs like Coursera, and
@@ -244,8 +253,12 @@ export default function ProjectsPage() {
           {/*Decrypt */}
 
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={decrypt} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={decrypt}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Decrypt</div>
               <div className="proj_text">
                 A website for an annual online cryptic hunt competition
@@ -262,11 +275,46 @@ export default function ProjectsPage() {
             </div>
             <div className="inner_card"></div>
           </div>
+          {/*Datagrad */}
+
+          <div className="mainc">
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={mahe}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
+              <div className="proj_title">SLCM Automation</div>
+              <div
+                className="proj_text"
+                style={{ width: "103%", marginLeft: "-1.5%" }}
+              >
+                Selenium web scraping and automation tool to simplify data
+                collection and form filling from Portal.
+              </div>
+              <div className="icons_c2">
+                <a
+                  target="__blank"
+                  href="https://github.com/suryaansh2002/form_filling_automation"
+                >
+                  <AiFillGithub className="picon" />
+                </a>
+                <a target="__blank" href="https://mitcse.manipal.edu/mentor">
+                  <HiGlobeAlt className="picon" />
+                </a>
+              </div>
+            </div>
+            <div className="inner_card"></div>
+          </div>
 
           {/*Atlantis */}
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={atlantis} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={atlantis}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Atlantis</div>
               <div className="proj_text">
                 A website built using React JS, for IEEE SBM's annual TechWeek
@@ -284,8 +332,12 @@ export default function ProjectsPage() {
 
           {/*Ecommerce */}
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={ecommerce} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={ecommerce}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Ecommerce website</div>
               <div className="proj_text">
                 A basic Ecommerce website built using MongoDB, Express, React
@@ -311,8 +363,12 @@ export default function ProjectsPage() {
 
           {/*Chattify */}
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={chattify} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={chattify}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Chattify</div>
               <div className="proj_text">
                 A real time chat Application built using React JS, Firebase for
@@ -336,8 +392,12 @@ export default function ProjectsPage() {
 
           {/*Discussion Rooms */}
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={discussion} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={discussion}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">Discussion Rooms</div>
               <div className="proj_text">
                 A discussion rooms application, built with HTML-CSS Frontend and
@@ -363,8 +423,12 @@ export default function ProjectsPage() {
 
           {/*To Do*/}
           <div className="mainc">
-            <div className="proj_card"  id={light ? "proj_card_light" : null}>
-              <img src={todo} className="proj_img"  id={light ? "proj_img_light" : null}></img>
+            <div className="proj_card" id={light ? "proj_card_light" : null}>
+              <img
+                src={todo}
+                className="proj_img"
+                id={light ? "proj_img_light" : null}
+              ></img>
               <div className="proj_title">To Do App</div>
               <div className="proj_text">
                 A responsive Todo Web Application built using MERN Stack and
@@ -377,7 +441,10 @@ export default function ProjectsPage() {
                 >
                   <AiFillGithub className="picon" />
                 </a>
-                <a target="__blank" href="https://to-do-app-suryaansh.netlify.app/">
+                <a
+                  target="__blank"
+                  href="https://to-do-app-suryaansh.netlify.app/"
+                >
                   <HiGlobeAlt className="picon" />{" "}
                 </a>
               </div>
