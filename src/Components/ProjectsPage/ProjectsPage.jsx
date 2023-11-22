@@ -3,7 +3,7 @@ import "./ProjectsPage.css";
 import AnimatedCursor from "react-animated-cursor";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
+import certificate from "../../Assets/Certificate.pdf";
 import psychup from "../../Assets/Skills/psych.png";
 import datagrad from "../../Assets/Skills/datagrad.png";
 import decrypt from "../../Assets/Skills/decrypt.png";
@@ -15,6 +15,7 @@ import todo from "../../Assets/Skills/todo.png";
 import mahe from "../../Assets/mahe.png";
 
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { PiCertificateFill } from "react-icons/pi";
 import { HiGlobeAlt } from "react-icons/hi";
 import Header from "../Header/Header";
 
@@ -301,6 +302,9 @@ export default function ProjectsPage() {
                 </a>
                 <a target="__blank" href="https://mitcse.manipal.edu/mentor">
                   <HiGlobeAlt className="picon" />
+                </a>
+                <a download href={certificate}>
+                  <PiCertificateFill className="picon" />
                 </a>
               </div>
             </div>

@@ -44,7 +44,6 @@ export default function Research(props) {
           <div className="research-author">- Suryaansh Rathinam</div>
           <div className="research-flex">
             <div className="research-presented">
-              
               Presented at:{" "}
               <a href="https://atis2022.com/" target={"_blank"}>
                 ATIS 2022 Conference
@@ -90,7 +89,7 @@ export default function Research(props) {
               </a>
             </div>
             <div className="research-published">
-             Published In: {" "}
+              Published In:{" "}
               <a
                 href="https://iopscience.iop.org/article/10.1088/1742-6596/2571/1/012022"
                 target={"_blank"}
@@ -110,6 +109,40 @@ export default function Research(props) {
               </button>
             </a>
           </div>
+        </div>
+        <div className="research-card">
+          {/* <div className="r-card-border"></div> */}
+          <div className="research-title">
+            Exploring IoT-Blockchain Integration in Agriculture: An Experimental
+            Study
+          </div>
+          <div className="research-author">
+            - Namrata Mariam Chacko, Dr. V. G Narendra, Dr. Mamatha Balachandra,
+            Suryaansh Rathinam
+          </div>
+          <div className="research-flex">
+            <div className="research-presented"></div>
+            <div className="research-published">
+              Published In:{" "}
+              <a
+                href="https://ieeexplore.ieee.org/document/10323331"
+                target={"_blank"}
+              >
+                IEEE Access
+              </a>
+            </div>
+          </div>
+
+          {/* <div>
+            <a href={paper2} download>
+              <button
+                className="download_r"
+                id={props.light ? "download_r_light" : null}
+              >
+                <FaFileDownload className="download-icon" /> PDF
+              </button>
+            </a>
+          </div> */}
         </div>
       </div>
     </div>
