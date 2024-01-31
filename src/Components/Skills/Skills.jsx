@@ -25,6 +25,8 @@ import html from "../../Assets/Skills/html.png";
 import css from "../../Assets/Skills/css.png";
 import ts from "../../Assets/Skills/typescript.png";
 import react_native from "../../Assets/Skills/r-native.png";
+import swift from "../../Assets/Skills/swift.png";
+
 import react_native_dark from "../../Assets/Skills/r-native_dark.png";
 import bootstrap from "../../Assets/Skills/bootstrap.png";
 import php from "../../Assets/Skills/php.png";
@@ -47,12 +49,31 @@ import nest from "../../Assets/Skills/nest.png";
 import postgres from "../../Assets/Skills/postgres.png";
 
 import SkillsCard from "./SkillsCard";
+import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 
 export default function Skills(props) {
   const [light, setLight] = useState(false);
 
   const [carSettings, setCarSettings] = useState();
-
+  const [openSkill, setOpenSkill] = useState("");
+  const skills = {
+    programming: "Programming Languages",
+    frontend: "Frontend Development & UI/UX",
+    backend: "Backend Development",
+    db: "Databases",
+    devops: "Cloud & Devops",
+    mobile: "Mobile App Development",
+    testing: "Testing & Automation",
+  };
+  const skillImages = {
+    programming: [python, js, cpp, c, java],
+    frontend: [html, css, bootstrap, react, redux, sass, canva, figma],
+    backend: [node, express, php, django, fastapi, nest],
+    db: [mongo, mysql, postgres, typeorm],
+    devops: [firebase, docker, aws, git],
+    mobile: [react_native, flutter, swift],
+    testing: [selenium, appium],
+  };
   var settings = {
     infinite: true,
     dots: false,
@@ -106,85 +127,36 @@ export default function Skills(props) {
       <div className="skills_header" id="skills">
         My Skills
       </div>
-      <div className="imgslider">
-        <Slider {...carSettings}>
-          <SkillsCard light={light} img={c} name="C" stars={4} half={true} />
-          <SkillsCard
-            light={light}
-            img={cpp}
-            name="C++"
-            stars={4}
-            half={false}
-          />
-          <SkillsCard
-            light={light}
-            img={python}
-            name="Python"
-            stars={4}
-            half={true}
-          />
-          <SkillsCard
-            light={light}
-            img={java}
-            name="Java"
-            stars={3}
-            half={true}
-          />
-          <SkillsCard
-            light={light}
-            img={js}
-            name="JavaScript"
-            stars={5}
-            half={false}
-          />
-          <SkillsCard
-            light={light}
-            img={react}
-            name="React JS"
-            stars={4}
-            half={true}
-          />
-          <SkillsCard
-            light={light}
-            img={mongo}
-            name="MongoDB"
-            stars={4}
-            half={false}
-          />
-          <SkillsCard light={light} img={express} stars={4} half={false} />
-          <SkillsCard light={light} img={node} stars={4} half={false} />
-          <SkillsCard light={light} img={fastapi} stars={3} half={false} />
-          <SkillsCard light={light} img={next} stars={4} half={false} />
-          <SkillsCard light={light} img={typeorm} stars={3} half={true} />
-          <SkillsCard light={light} img={nest} stars={3} half={true} />
-          <SkillsCard light={light} img={firebase} stars={3} half={true} />
-          <SkillsCard light={light} img={appium} stars={3} half={true} />
-          <SkillsCard light={light} img={postgres} stars={3} half={true} />
-          <SkillsCard light={light} img={docker} stars={3} half={false} />
-          <SkillsCard light={light} img={aws} stars={3} half={false} />
-          <SkillsCard light={light} img={django} stars={3} half={true} />
-          <SkillsCard light={light} img={html} stars={5} half={false} />
-          <SkillsCard light={light} img={css} stars={5} half={false} />
-          <SkillsCard light={light} img={ts} stars={4} half={false} />
-          <SkillsCard
-            img={light ? react_native : react_native_dark}
-            stars={3}
-            half={false}
-            light={light}
-          />
-          <SkillsCard light={light} img={php} stars={3} half={true} />
-          <SkillsCard light={light} img={bootstrap} stars={5} half={false} />
-          <SkillsCard light={light} img={redux} stars={3} half={true} />
-          <SkillsCard light={light} img={sass} stars={4} half={false} />
-          <SkillsCard light={light} img={mysql} stars={4} half={true} />
-          <SkillsCard light={light} img={git} stars={5} half={false} />
-          <SkillsCard light={light} img={selenium} stars={4} half={false} />
-          <SkillsCard light={light} img={flutter} stars={2} half={true} />
-          <SkillsCard light={light} img={matlab} stars={3} half={false} />
-          <SkillsCard light={light} img={canva} stars={3} half={true} />
-          <SkillsCard light={light} img={figma} stars={2} half={true} />
-        </Slider>
-      </div>
+      {Object.keys(skills).map((skill) => (
+        <div
+          className="skills-toggle"
+          onClick={() => {
+            openSkill === skill ? setOpenSkill("") : setOpenSkill(skill);
+          }}
+        >
+          {openSkill === skill ? (
+            <AiOutlineDown style={{ marginRight: "1rem" }} />
+          ) : (
+            <AiOutlineRight style={{ marginRight: "1rem" }} />
+          )}
+          {skills[skill]}
+          {openSkill === skill && (
+            <div style={{ margin: "1rem" }}>
+              {skillImages[skill].map((skillImage) => (
+                <img
+                  src={skillImage}
+                  style={{
+                    width: "75px",
+                    height: "75px",
+                    margin: "0.5rem 1.5rem",
+                  }}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+{/* 
       <div className="skills_link_container">
         <Link
           to={"/skills"}
@@ -194,7 +166,7 @@ export default function Skills(props) {
           Checkout my entire skill set...{" "}
           <BsFillArrowRightSquareFill className="arrow" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

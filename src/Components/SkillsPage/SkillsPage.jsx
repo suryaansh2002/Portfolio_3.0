@@ -216,11 +216,11 @@ export default function SkillsPage(props) {
       />
       <div className="skillsPage_main" id={light ? "lightid" : null}>
         <div className="skillsPage_header">My Skills</div>
-        <div className="skillsPage_text">
+        {/* <div className="skillsPage_text">
           I've been exploring a lot over the last couple of years, in an attempt
           to enhance my skill set. Here are some of the skills that I have
           worked on during this time.
-        </div>
+        </div> */}
         <div className="skillsPage_cards">
           <SkillsCard light={light} img={c} name="C" stars={4} half={true} />
           <SkillsCard

@@ -18,6 +18,7 @@
   z-index: 100;
   display: inline-block;
   width: 40vw;
+  height: 40vh;
 }
 .me {
   width: 22rem;
@@ -29,14 +30,12 @@
   position: relative;
   z-index: 200;
 }
-#light_me{
+#light_me {
   box-shadow: 5px 3px 5px white;
-
 }
 
-#light_imgBg{
+#light_imgBg {
   border: 2px solid black;
-
 }
 .leftBg {
   border-radius: 5px;
@@ -99,10 +98,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-.about_main {
-min-height: 100vh;
-height: auto;
-}
+  .about_main {
+    min-height: 100vh;
+    height: auto;
+  }
   .about_txt {
     font-size: 1rem;
     display: inline-block;
@@ -165,7 +164,6 @@ height: auto;
     padding-top: 0.1rem;
     border-radius: 50px;
   }
-  
 
   .d_icon {
     margin-left: 0.25rem;
