@@ -145,11 +145,7 @@ export default function Skills(props) {
               {skillImages[skill].map((skillImage) => (
                 <img
                   src={skillImage}
-                  style={{
-                    width: "75px",
-                    height: "75px",
-                    margin: "0.5rem 1.5rem",
-                  }}
+                 className="skills-toggle-img"
                 />
               ))}
             </div>

@@ -145,7 +145,7 @@ export default function Main() {
         ]}
       />
 
-      <Particles
+      {/* <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -178,7 +178,7 @@ export default function Main() {
           particles: particlesObj,
           detectRetina: false,
         }}
-      />
+      /> */}
 
       <Landing light={light} setLight={setLight} />
       <About light={light} setLight={setLight} />

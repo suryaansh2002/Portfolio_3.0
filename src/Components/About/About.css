@@ -147,7 +147,9 @@
 
   .download {
     margin-top: 1.5rem;
-    margin-left: 30%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
     font-size: 1.1rem;
     font-family: "Roboto";
     padding: 0.5rem 1rem;

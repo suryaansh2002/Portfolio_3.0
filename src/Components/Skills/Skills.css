@@ -34,6 +34,11 @@
   margin-bottom: 1.5rem;
   margin-left: 3rem;
 }
+.skills-toggle-img {
+  width: 75px;
+  height: 75px;
+  margin: 0.5rem 1rem;
+}
 .skills_card_img {
   height: 13rem;
   width: 13rem;
@@ -114,6 +119,18 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .skills-toggle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    margin-left: 2rem;
+  }
+
+  .skills-toggle-img {
+    width: 35px;
+    height: 35px;
+    margin: 0.25rem 0.5rem;
+  }
   .skills_card {
     width: 60vw;
     height: 18rem;
