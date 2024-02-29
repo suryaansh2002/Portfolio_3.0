@@ -114,7 +114,7 @@
   height: 30rem;
 }
 .morep {
-  text-align: right;
+  text-align: center;
   font-size: 1.1rem;
   font-family: "Cinzel", serif;
   margin-right: 5rem;
@@ -135,9 +135,9 @@
     transform: translateX(-7.5%);
   }
   .morep {
-    width: max-content;
-    margin-left: 100vw;
-    transform: translateX(-120%);
+    /* width: max-content; */
+    /* margin-left: 100vw; */
+    /* transform: translateX(-120%); */
     font-size: 0.25vw;
   }
   #more_link {

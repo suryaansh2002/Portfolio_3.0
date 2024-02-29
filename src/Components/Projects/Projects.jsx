@@ -12,11 +12,6 @@ export default function Projects(props) {
       <div className="projects_header" id="projects">
         My Projects
       </div>
-      <div className="morep">
-        <a href="/projects" id="more_link">
-          More Projects...
-        </a>
-      </div>
       <div className="card_c">
         {/*Psychup */}
         <div className="mainc">
@@ -91,6 +86,12 @@ export default function Projects(props) {
           </div>
           <div className="inner_card"></div>
         </div>
+
+        <div className="morep">
+        <a href="/projects" id="more_link">
+          View All Projects
+        </a>
+      </div>
       </div>
     </div>
   );

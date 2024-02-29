@@ -29,7 +29,7 @@ export default function About(props) {
         </div>
         <div className="about_txt">
           Hello, I'm Suryaansh Rathinam, a final-year Computer Science student
-          at Manipal Institute of Technology. Proficient as a Full Stack
+          at MIT, Manipal, currently based in Mumbai, India. Proficient as a Full Stack
           Developer, I've embraced various tech stacks, tools, and frameworks
           through diverse projects, fostering an unceasing desire for learning
           and growth.
