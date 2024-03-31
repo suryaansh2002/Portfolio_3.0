@@ -3,7 +3,7 @@ import "./About.css";
 import me from "../../Assets/me.png";
 import me2 from "../../Assets/me2.png";
 import { MdSimCardDownload } from "react-icons/md";
-import resume from "../../Assets/SuryaanshRathinam_CV.pdf";
+import resume from "../../Assets/Suryaansh Rathinam Resume Latest.pdf";
 export default function About(props) {
   return (
     <>
@@ -45,7 +45,7 @@ export default function About(props) {
               className="download"
               id={props.light ? "download_light" : null}
             >
-              Curriculum Vitae{" "}
+              Resume{" "}
               <MdSimCardDownload
                 className="d_icon"
                 id={props.light ? "d_icon_light" : null}

@@ -217,15 +217,21 @@ export default function Moneyflo() {
         <div className="rc2_left">
           <div className="mywork">My Work at Moneyflo</div>
           <p>
-            During my tenure at Moneyflo as a <b>Full Stack Developer</b>, I
-            have been an integral part of the team driving the platform's
-            development. This journey has encompassed both frontend and backend
+            During my tenure at Moneyflo as a Full Stack Developer, I have been
+            an integral part of the team driving the platform's development.
+            This journey has encompassed both frontend and backend
             responsibilities. I've dedicated efforts to enhancing the platform's
             UI/UX across multiple iterations, consistently introducing new
             features to elevate user experiences and deliver valuable insights.
             My involvement also extends to backend development, where I've been
             instrumental in constructing RestAPI endpoints and functionalities
-            that seamlessly align with user interface features.
+            that seamlessly align with user interface features. Additionally,
+            I've played a pivotal role in empowering clients to make
+            better-informed decisions by providing easy-to-understand insights.
+            Moreover, I have built an AI Assistant backed by OpenAI API
+            Endpoints, facilitating end clients to interact effortlessly and
+            efficiently, thereby enabling them to obtain the insights necessary
+            for informed decision-making.
           </p>
         </div>
         <div className="rc2_right">
@@ -239,7 +245,7 @@ export default function Moneyflo() {
             <div className="work_skill">TypeORM</div>
             <div className="work_skill">Postgres</div>
             <div className="work_skill">AWS</div>
-
+            <div className="work_skill">OpenAI</div>
           </div>
         </div>
       </div>
