@@ -12,12 +12,14 @@ import Apt from "./WorkPages/APT/Apt";
 import Santanet from "./WorkPages/Santanet/Santanet";
 import Pefo from "./WorkPages/PEFO/Pefo";
 import Moneyflo from "./WorkPages/Moneyflo/Moneyflo";
+import About from "./Components/About/About";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="about" element={<About />} />
       <Route path="skills" element={<SkillsPage />} />
       <Route path="projects" element={<ProjectsPage />} />
       <Route path="ridecell" element={<Ridecell />} />

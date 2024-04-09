@@ -3,7 +3,7 @@ import "./Research.css";
 import paper from "../../Assets/SuryaanshRathinam_ComparisonOfFrontendFrameworks.pdf";
 import paper2 from "../../Assets/Review_Paper.pdf";
 import paper3 from "../../Assets/KGP_Certificate.pdf";
-
+import paper4 from "../../Assets/Exploring_IoT-Blockchain_Integration_in_Agriculture_An_Experimental_Study.pdf"
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdPresentToAll } from "react-icons/md";
 import { FaFileDownload } from "react-icons/fa";
@@ -13,7 +13,7 @@ export default function Research(props) {
       <div className="projects_header" id="research">
         Research Work
       </div>
-      <div>
+      <div className="research-container">
         <div className="research-card">
           {/* <div className="r-card-border"></div> */}
           <div className="research-title">
@@ -133,8 +133,8 @@ export default function Research(props) {
             </div>
           </div>
 
-          {/* <div>
-            <a href={paper2} download>
+          <div>
+            <a href={paper4} download>
               <button
                 className="download_r"
                 id={props.light ? "download_r_light" : null}
@@ -142,7 +142,7 @@ export default function Research(props) {
                 <FaFileDownload className="download-icon" /> PDF
               </button>
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

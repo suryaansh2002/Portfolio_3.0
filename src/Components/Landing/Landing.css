@@ -13,17 +13,21 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
   color: white;
+  overflow-y: hidden;
 }
 body {
   overflow-x: hidden;
 }
 
 .landing_name {
-  font-size: 90px;
-  position: absolute;
-  top: 35vh;
-  left: 10%;
+  font-size: 3rem;
+  position: relative;
+  /* top: 35vh;
+  left: 10%; */
+  width: 100%;
   font-weight: 900;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
   line-height: 110px;
   font-family: Silkscreen;
@@ -33,29 +37,25 @@ body {
 
 .landing_profile {
   position: absolute;
-  right: 7.5%;
-  top: 14%;
-  width: 38rem;
-  opacity: 0.8;
+  width: 40rem;
+  opacity: 0.15;
   z-index: 100;
+  margin-top: 6em;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 @media only screen and (max-width: 600px) {
   .landing_profile {
     left: 50%;
     transform: translateX(-50%);
     top: 40vh;
+    display: none;
     width: 80vw;
   }
   .landing_name {
-    font-size: 8.5vw;
-    position: absolute;
-    top: 20vh;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 900;
-    text-align: center;
-    line-height: 12vw;
-    width: 100vw;
+    font-size: 7vw;
+    margin-bottom: 5rem;
   }
 }
 

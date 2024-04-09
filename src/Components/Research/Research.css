@@ -21,7 +21,10 @@
 a {
   color: white;
 }
-
+.research-container{
+  text-align: center;
+  width: 100vw;
+}
 .research-card {
   position: relative;
   width: 50vw;
@@ -45,26 +48,26 @@ a {
 }
 
 .research-title {
-  font-size: 1.65rem;
+  font-size: 1.3rem;
   font-family: "Roboto", serif;
-  text-transform: uppercase;
+  text-transform:capitalize;
 }
 
 .research-author {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-family: "Roboto", serif;
   margin: 1rem;
   font-style: italic;
 }
 
 .research-published {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-family: "Roboto", serif;
   margin: 1rem;
 }
 
 .research-presented {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-family: "Roboto", serif;
   margin: 1rem;
 }
@@ -78,8 +81,8 @@ a {
   margin-bottom: 6rem;
 }
 .research-flex {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  /* flex-direction: row; */
   justify-content: space-between;
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import bitmoji from "../../Assets/Skills/bitmoji.png";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 import { CgMail } from "react-icons/cg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsMedium, BsGithub } from "react-icons/bs";
@@ -12,8 +13,8 @@ export default function Contact(props) {
         Get In Touch With Me
       </div>
       <div className="logo_C" id={props.light ? "logo_light" : null}>
-        <a href="https://instagram.com/suryaansh2807" target="__blank">
-          <AiOutlineInstagram className="logo" />
+        <a href="https://leetcode.com/suryaansh28/" target="__blank">
+          <SiLeetcode className="logo" />
         </a>
         <a href="mailto:suryaansh2002@gmail.com">
           <CgMail className="logo" />
