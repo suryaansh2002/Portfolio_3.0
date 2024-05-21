@@ -35,7 +35,6 @@ import redux from "../../Assets/Skills/redux.png";
 import sass from "../../Assets/Skills/sass.png";
 import mysql from "../../Assets/Skills/mysql.png";
 import git from "../../Assets/Skills/git.png";
-import matlab from "../../Assets/Skills/matlab.png";
 import selenium from "../../Assets/Skills/selenium.png";
 import flutter from "../../Assets/Skills/flutter.png";
 import canva from "../../Assets/Skills/canva.png";
@@ -67,8 +66,8 @@ export default function Skills(props) {
   };
   const skillImages = {
     programming: [python, js, cpp, c, java],
-    frontend: [html, css, bootstrap, react, redux, sass, canva, figma],
-    backend: [node, express, php, django, fastapi, nest],
+    frontend: [html, css, bootstrap, react, redux, next,ts, sass, canva, figma],
+    backend: [node, express, php, django, fastapi, ts, nest],
     db: [mongo, mysql, postgres, typeorm],
     devops: [firebase, docker, aws, git],
     mobile: [react_native, flutter, swift],
