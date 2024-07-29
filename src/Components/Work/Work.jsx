@@ -29,7 +29,7 @@ export default function Work(props) {
           ></div>
           <div className="dur" id={props.light ? "dur_light" : null}>
             <AiFillCalendar className="calender" />
-            Mar '23 - Present
+            Mar '23 - Jun '24
           </div>
           <a href="/moneyflo">
             <div

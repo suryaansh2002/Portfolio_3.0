@@ -48,8 +48,7 @@ export default function About(props) {
         </div>
      
         <div className="about_txt">
-          Hello, I'm Suryaansh Rathinam, a final semester Computer Science student
-          at MIT, Manipal, currently based in Mumbai, India. Post this I will be pursuing my MS in Computer Science in Fall 2024. <br/> <br/>
+          Hello, I'm Suryaansh Rathinam, pursuing my Masters of Computing (AI Specialization) at the <i>National University of Singapore</i> <br/> <br/>
           Proficient as a Full Stack Developer, I've constantly worked on developing my <b><HashLink to={'/#skills'}>skills</HashLink></b> by exploring various tech stacks, tools, and frameworks through diverse <b><HashLink to={'/projects'}>projects</HashLink></b>, fostering an unceasing desire for learning and growth.
           <br/>
           My journey extends beyond development; as I have delved into <b><HashLink to={'/#research'}>research</HashLink></b> in Artificial Intelligence and other domains as well. <br/>

@@ -9,8 +9,8 @@ import BackToTopButton from "../TopButton/TopButton";
 
 
 import "./AboutNew.css";
-import me from "../../Assets/me.png";
-import me2 from "../../Assets/me2.png";
+import me from "../../Assets/profile.jpeg";
+import me2 from "../../Assets/profile.jpeg";
 import { MdSimCardDownload } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { AiOutlineInfoCircle } from "react-icons/ai";
