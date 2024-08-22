@@ -1,0 +1,176 @@
+.education_main {
+    min-height: 100vh;
+    background: rgb(0, 2, 49);
+    background: linear-gradient(125deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+    max-width: 100vw;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .education_header {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Cinzel", serif;
+    padding-top: 4rem;
+  }
+  
+  .card_c {
+    text-align: center;
+    align-items: center;
+    padding: auto;
+    margin-left: -3.5%;
+  }
+  
+  .edu_img {
+    height: 9.5rem;    
+    z-index: 200;
+    /* border-radius: 50%; */
+    padding: 0.5rem;
+    /* border: 2.5px solid rgba(32, 70, 222, 0.5); */
+  }
+  #proj_img_light{
+    border: 2.5px solid rgba(0, 23, 106, 0.5) !important;
+  
+  }
+  .edu_title {
+    font-family: "Cinzel", serif;
+    font-size: 1.3rem;
+    font-family: 900;
+    margin-top: 1rem;
+  
+  }
+  .proj_text {
+    margin-top: 1rem;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  
+  }
+  .proj_card {
+    width: 20rem;
+    height: 25rem;
+    background-color: rgb(5, 0, 54);
+    margin: 0rem 4.5rem;
+    box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
+    padding-top: 2rem;
+    position: relative;
+    color:  white ; 
+    z-index: 100;
+  }
+  
+  #proj_card_light {
+    background-color: rgb(210, 228, 243) !important;
+    color: black !important;
+  }
+  #proj_card_light *{
+    color: black !important;
+  
+  }
+  .inner_card {
+    width: 19.25rem;
+    height: 25rem;
+    border: 3px solid rgba(27, 57, 176, 0.5);
+    background-color: rgba(27, 57, 176, 0.5);
+    margin-left: 3.5rem;
+    margin-top: 1.2rem;
+    position: relative;
+    transform: translateY(-100%) translateX(2.5rem);
+  }
+  .img_card:hover .proj_card {
+    cursor: pointer;
+    height: 26rem;
+  }
+  
+  .pcard {
+    display: inline-block;
+  }
+  
+  .picon {
+    font-size: 2rem;
+    margin: auto;
+  
+  }
+  .icons_c {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .edu_c2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .mainc {
+    display: inline-block;
+    height: 30rem;
+  }
+  .morep {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Cinzel", serif;
+    margin-bottom: 2rem;
+  }
+  #lightid a {
+    color: black;
+  }
+  @media only screen and (max-width: 600px) {
+    .projects_header {
+      font-size: 8vw;
+    }
+    .card_c {
+      width: 100vw;
+      margin-left: 0rem !important;
+    }
+    .mainc {
+      transform: translateX(-7.5%);
+    }
+    .morep {
+      /* width: max-content; */
+      /* margin-left: 100vw; */
+      /* transform: translateX(-120%); */
+      font-size: 0.25vw;
+    }
+    #more_link {
+      font-size: 4vw;
+    }
+    .proj_card {
+      width: 17rem !important;
+      height: 23rem !important;
+      background-color: rgb(5, 0, 54);
+      margin: 0rem 4.5rem;
+      box-shadow: 2px 6px 10px 6px rgb(0, 0, 0);
+      padding-top: 2rem;
+      position: relative;
+      z-index: 100;
+    }
+    .inner_card {
+      width: 16.25rem !important;
+      height: 23rem !important;
+      border: 3px solid rgba(27, 57, 176, 0.5);
+      background-color: rgba(27, 57, 176, 0.5);
+      margin-left: 3.5rem;
+      margin-top: 1.2rem;
+      position: relative;
+      transform: translateY(-100%) translateX(2.5rem);
+    }
+    .edu_title{
+      font-size: 1.25rem !important;
+    }
+    .proj_text{
+      font-size: 1rem !important;
+  
+    }
+    .picon{
+      font-size: 1.5rem !important;
+    }
+  }
+  

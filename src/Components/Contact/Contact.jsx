@@ -19,9 +19,9 @@ export default function Contact(props) {
         <a href="mailto:suryaansh2002@gmail.com">
           <CgMail className="logo" />
         </a>
-        <a href="https://suryaansh2002.medium.com/" target={"__blank"}>
+        {/* <a href="https://suryaansh2002.medium.com/" target={"__blank"}>
           <BsMedium className="logo" />
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/suryaansh-rathinam-33a86b1b6/"
           target={"__blank"}

@@ -49,14 +49,12 @@ export default function About(props) {
      
         <div className="about_txt">
           Hello, I'm Suryaansh Rathinam, pursuing my Masters of Computing (AI Specialization) at the <i>National University of Singapore</i> <br/> <br/>
-          Proficient as a Full Stack Developer, I've constantly worked on developing my <b><HashLink to={'/#skills'}>skills</HashLink></b> by exploring various tech stacks, tools, and frameworks through diverse <b><HashLink to={'/projects'}>projects</HashLink></b>, fostering an unceasing desire for learning and growth.
+          Proficient as a Full Stack Developer and experience in ML Developement, I've constantly worked on developing my <b><HashLink to={'/#skills'}>skills</HashLink></b> by exploring various tech stacks, tools, and frameworks through diverse <b><HashLink to={'/projects'}>projects</HashLink></b>, fostering an unceasing desire for learning and growth.
           <br/>
           My journey extends beyond development; as I have delved into <b><HashLink to={'/#research'}>research</HashLink></b> in Artificial Intelligence and other domains as well. <br/>
           <br/>
-        I am currently working on solidfying and enhancing my knowledge in the field of Devops and also exploring LLMs.
-          <br />
-          I am also open to take up any freelance opportunities that you believe might I might be able to assist you with.
-          <br/>
+        I am currently working on solidfying and enhancing my knowledge in the field of LLMs, and trying to keep up with the latest advancements in the AI space.
+          I am also open to take up any freelance opportunities that you believe might I might be able to assist you with and am currently seeking internships for Summer 2025.
            If you're pursuing endeavors aligned with my interests
           or need a helping hand, feel free to <b><a href="'https://calendly.com/suryaansh2002/connect-with-suryaansh'" target="__blank">connect</a></b>. Let's join forces to
           explore new and exciting possibilities. <br />

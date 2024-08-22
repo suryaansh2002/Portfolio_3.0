@@ -116,7 +116,7 @@ export default function Work(props) {
           </a>
         </div>
       </div>
-      <div className="work_card_container">
+      {/* <div className="work_card_container">
       <div className="card_cont">
           <div
             className="work_card"
@@ -141,7 +141,7 @@ export default function Work(props) {
             </div>
           </a>
         </div>   
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -11,6 +11,7 @@ import { loadFull } from "tsparticles";
 import AnimatedCursor from "react-animated-cursor";
 import Header from "../Header/Header";
 import Research from "../Research/Research";
+import Education from "../Education/Education";
 export default function Main() {
   const [light, setLight] = useState(false);
   const particlesInit = useCallback(async (engine) => {
@@ -186,6 +187,7 @@ export default function Main() {
       <Projects light={light} setLight={setLight} />
       <Work light={light} setLight={setLight} />
       <Research light={light} setLight={setLight} />
+      <Education light={light} setLight={setLight} />
       <Contact light={light} setLight={setLight} />
     </div>
   );
