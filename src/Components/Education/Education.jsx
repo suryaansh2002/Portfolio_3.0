@@ -13,26 +13,6 @@ export default function Education(props) {
       </div>
       <div className="card_c">
       
-        {/*MIT */}
-        <div className="mainc">
-          <div className="proj_card"  id={props.light ? "proj_card_light" : null}>
-            <img src={mahe} className="edu_img"  id={props.light ? "proj_img_light" : null}></img>
-            <div className="edu_title">Manipal Institute of Technology</div>
-            <div className="proj_text">
-              Bachelor's of Technology: Computer Science
-            </div>
-            <div className="edu_c2">
-             <div>
-                2020-2024
-             </div>
-             <div>
-                GPA: 9.47
-             </div>
-            </div>
-          </div>
-          <div className="inner_card"></div>
-        </div>
-
  {/*NUS */}
  <div className="mainc">
           <div className="proj_card"  id={props.light ? "proj_card_light" : null}>
@@ -52,7 +32,26 @@ export default function Education(props) {
           </div>
           <div className="inner_card"></div>
         </div>
-
+        
+        {/*MIT */}
+        <div className="mainc">
+          <div className="proj_card"  id={props.light ? "proj_card_light" : null}>
+            <img src={mahe} className="edu_img"  id={props.light ? "proj_img_light" : null}></img>
+            <div className="edu_title">Manipal Institute of Technology</div>
+            <div className="proj_text">
+              Bachelor's of Technology: Computer Science
+            </div>
+            <div className="edu_c2">
+             <div>
+                2020-2024
+             </div>
+             <div>
+                GPA: 9.47
+             </div>
+            </div>
+          </div>
+          <div className="inner_card"></div>
+        </div>
 
       </div>
     </div>
