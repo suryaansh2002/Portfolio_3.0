@@ -14,7 +14,7 @@ export default function Header(props) {
         <HashLink smooth className="header_link" to={"/"}>
           Home
         </HashLink>
-        <HashLink smooth className="header_link" to={"/#about"}>
+        <HashLink smooth className="header_link" to={"/about"}>
           About
         </HashLink>
         <HashLink smooth className="header_link" to={"/#skills"}>

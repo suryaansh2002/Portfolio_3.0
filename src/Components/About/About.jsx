@@ -54,8 +54,9 @@ export default function About(props) {
           My journey extends beyond development; as I have delved into <b><HashLink to={'/#research'}>research</HashLink></b> in Artificial Intelligence and other domains as well. <br/>
           <br/>
         I am currently working on solidfying and enhancing my knowledge in the field of LLMs, and trying to keep up with the latest advancements in the AI space.
-          I am also open to take up any freelance opportunities that you believe might I might be able to assist you with and am currently seeking internships for Summer 2025.
-           If you're pursuing endeavors aligned with my interests
+          I am also open to take up any freelance opportunities, and am on the search for internships for Summer (May-Jul) 2025.
+          <br/>
+           Please reach out to me if you're pursuing endeavors aligned with my interests
           or need a helping hand, feel free to <b><a href="'https://calendly.com/suryaansh2002/connect-with-suryaansh'" target="__blank">connect</a></b>. Let's join forces to
           explore new and exciting possibilities. <br />
        
