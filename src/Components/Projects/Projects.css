@@ -22,6 +22,26 @@
   padding: auto;
   margin-left: -3.5%;
 }
+.projcard_cont {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line for responsive design */
+  gap: 1rem; /* Space between cards */
+  justify-content: center; /* Aligns cards centrally */
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  display: inline-block;
+}
+
+.project_date{
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+  font-family: 900;
+  margin-top: 1rem;
+  text-align: right;
+  margin-right: 1rem;
+
+}
 
 .proj_img {
   width: 50%;
@@ -39,6 +59,7 @@
   font-size: 1.5rem;
   font-family: 900;
   margin-top: 1rem;
+  text-align: center;
 
 }
 .proj_text {
@@ -47,7 +68,7 @@
   font-style: italic;
   font-size: 1.2rem;
   line-height: 1.6rem;
-
+  text-align: left;
 }
 .proj_card {
   width: 20rem;
@@ -60,6 +81,21 @@
   color:  white ; 
   z-index: 100;
 }
+
+.project_card {
+  width: 20rem;
+  margin: 0rem 4rem; /* Adjust spacing as needed */
+  box-shadow: 2px 6px 10px 6px rgba(154, 161, 211, 0.492);
+  padding-top: 2rem;
+  position: relative;
+  color: white;
+  z-index: 100;
+  display: flex; /* Enables flex layout inside card */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push links container to the bottom */
+  height: 85%; /* Ensure all cards align */
+}
+
 
 #proj_card_light {
   background-color: rgb(210, 228, 243) !important;
@@ -94,11 +130,9 @@
 
 }
 .icons_c {
+  margin-top: auto; /* Pushes the container to the bottom */
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  width: 80%;
-  margin-left: 10%;
 }
 
 .icons_c2 {
@@ -110,14 +144,17 @@
 }
 
 .mainc {
-  display: inline-block;
-  height: 30rem;
+  flex: 1 1 calc(20rem + 2rem); /* Flexible width with a minimum size */
+  display: flex;
+  flex-direction: column;
 }
+
 .morep {
   text-align: center;
   font-size: 1.1rem;
   font-family: "Cinzel", serif;
   margin-bottom: 2rem;
+  width: 100vw;
 }
 #lightid a {
   color: black;

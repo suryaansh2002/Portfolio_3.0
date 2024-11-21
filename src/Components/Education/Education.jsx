@@ -46,7 +46,7 @@ export default function Education(props) {
                 2020-2024
              </div>
              <div>
-                GPA: 9.47
+                GPA: 9.47/10
              </div>
             </div>
           </div>

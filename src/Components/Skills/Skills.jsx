@@ -129,9 +129,12 @@ export default function Skills(props) {
       {Object.keys(skills).map((skill) => (
         <div
           className="skills-toggle"
-          onClick={() => {
-            openSkill === skill ? setOpenSkill("") : setOpenSkill(skill);
-          }}
+          // onClick={() => {
+          //   openSkill === skill ? setOpenSkill("") : setOpenSkill(skill);
+          // }}
+          onMouseEnter={() => setOpenSkill(skill)}
+          onMouseLeave={() => setOpenSkill("")}
+
         >
           {openSkill === skill ? (
             <AiOutlineDown style={{ marginRight: "1rem" }} />
