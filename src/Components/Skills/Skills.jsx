@@ -46,6 +46,7 @@ import next from "../../Assets/Skills/next.png";
 import typeorm from "../../Assets/Skills/typeorm.png";
 import nest from "../../Assets/Skills/nest.png";
 import postgres from "../../Assets/Skills/postgres.png";
+import excel from "../../Assets/Skills/excel.png";
 
 import SkillsCard from "./SkillsCard";
 import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
@@ -53,7 +54,6 @@ import { AiOutlineDown, AiOutlineRight } from "react-icons/ai";
 export default function Skills(props) {
   const [light, setLight] = useState(false);
 
-  const [carSettings, setCarSettings] = useState();
   const [openSkill, setOpenSkill] = useState("");
   const skills = {
     programming: "Programming Languages",
@@ -61,8 +61,7 @@ export default function Skills(props) {
     backend: "Backend Development",
     db: "Databases",
     devops: "Cloud & Devops",
-    mobile: "Mobile App Development",
-    testing: "Testing & Automation",
+    other: "Other",
   };
   const skillImages = {
     programming: [python, js, cpp, c, java],
@@ -70,54 +69,11 @@ export default function Skills(props) {
     backend: [node, express, php, django, fastapi, ts, nest],
     db: [mongo, mysql, postgres, typeorm],
     devops: [firebase, docker, aws, git],
-    mobile: [react_native, flutter, swift],
-    testing: [selenium, appium],
+    other: [react_native, flutter, swift, selenium, appium, excel],
   };
-  var settings = {
-    infinite: true,
-    dots: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    centerMode: true,
-    pauseOnHover: true,
-    swipeToSlide: true,
-  };
-  var settings2 = {
-    infinite: true,
-    dots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    centerMode: true,
-    pauseOnHover: true,
-    swipeToSlide: true,
-  };
-  var settings3 = {
-    infinite: true,
-    dots: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    centerMode: true,
-    pauseOnHover: true,
-    swipeToSlide: true,
-  };
+
   useEffect(() => {
-    window.innerWidth > 1000
-      ? setCarSettings(settings)
-      : window.innerWidth > 800
-      ? setCarSettings(settings3)
-      : setCarSettings(settings2);
-  }, [window.innerWidth]);
-  useEffect(() => {
-    if (localStorage.getItem("theme") == "true") {
+    if (localStorage.getItem("theme") === "true") {
       setLight(true);
     }
   }, []);
@@ -129,12 +85,9 @@ export default function Skills(props) {
       {Object.keys(skills).map((skill) => (
         <div
           className="skills-toggle"
-          // onClick={() => {
-          //   openSkill === skill ? setOpenSkill("") : setOpenSkill(skill);
-          // }}
-          onMouseEnter={() => setOpenSkill(skill)}
-          onMouseLeave={() => setOpenSkill("")}
-
+          onClick={() => {
+            openSkill === skill ? setOpenSkill("") : setOpenSkill(skill);
+          }}
         >
           {openSkill === skill ? (
             <AiOutlineDown style={{ marginRight: "1rem" }} />
