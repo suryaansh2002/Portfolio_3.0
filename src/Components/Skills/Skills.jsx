@@ -57,7 +57,7 @@ export default function Skills(props) {
   const [openSkill, setOpenSkill] = useState("");
   const skills = {
     programming: "Programming Languages",
-    frontend: "Frontend Development & UI/UX",
+    fullstack: "FullStack Development & UI/UX",
     backend: "Backend Development",
     db: "Databases",
     devops: "Cloud & Devops",
@@ -65,8 +65,7 @@ export default function Skills(props) {
   };
   const skillImages = {
     programming: [python, js, cpp, c, java],
-    frontend: [html, css, bootstrap, react, redux, next,ts, sass, canva, figma],
-    backend: [node, express, php, django, fastapi, ts, nest],
+    fullstack: [node, express, php, django, fastapi, ts, nest, html, css, bootstrap, react, redux, next,ts, sass, canva, figma],
     db: [mongo, mysql, postgres, typeorm],
     devops: [firebase, docker, aws, git],
     other: [react_native, flutter, swift, selenium, appium, excel],

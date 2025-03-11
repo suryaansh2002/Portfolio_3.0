@@ -33,6 +33,13 @@ export default function Projects(props) {
       github: "https://github.com/suryaansh2002/cs5223-A1",
     },
     {
+      title: "IRCTC Tatlak Booking",
+      description:
+        "A desktop application built using Electron JS and Python to allow users to automate scheduling the booking process of Tatkal tickets from the Indian Railways IRCTC Website. This is done using Selenium for browser automation and apscheduler to schedule Cron jobs.",
+      date: "Feb 2025",
+      github: "https://github.com/suryaansh2002/IRCTC_Tatkal",
+    },
+    {
       title: "SLCM Automation",
       description:
         "Created a Selenium-based web scraping and automation tool to streamline data collection and form filling from the Student Lifecycle Management (SLCM) portal. This tool reduces manual effort and enhances data accuracy for academic processes.",

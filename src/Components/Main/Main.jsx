@@ -183,8 +183,8 @@ export default function Main() {
 
       <Landing light={light} setLight={setLight} />
       {/* <About light={light} setLight={setLight} /> */}
-      <Skills light={light} setLight={setLight} />
       <Projects light={light} setLight={setLight} />
+      <Skills light={light} setLight={setLight} />
       <Education light={light} setLight={setLight} />
       <Work light={light} setLight={setLight} />
       <Research light={light} setLight={setLight} />
